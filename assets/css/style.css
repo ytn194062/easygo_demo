@@ -1,0 +1,190 @@
+
+/* =============== SECTION 1 ================ */
+.section-item-1{
+    height: 900px;
+    --col-number: 5;
+    --space-col: 25px;
+    overflow: hidden;
+}
+.section-item-1  .section-item__heading{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.nearest-place-item-img{
+    margin: 10px auto 20px auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    max-height: 160px;
+    max-width: 220px;
+}
+.nearest-place-item{
+    width: 100%;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 45px -15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+.nearest-place-item:not(:last-child){
+    margin-bottom: var(--item-Spacing);
+}
+
+.nearest-place-item-info{
+    margin: auto 15px;
+    font-size: 18px;
+    transition: all .2s ease-in-out;
+}
+.nearest-place-info-line .material-icons{
+    font-size: 16px;
+}
+.nearest-place-item-info .nearest-place-info-line:not(:first-child) {
+    font-size: 14px;
+    color: #AEAEAE;
+}
+.nearest-place-item-info .nearest-place-info-line:last-child{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.nearest-place-item:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+/* =============== SECTION 2 ================ */
+.section-item-2{
+    --col-number: 3;
+    --space-col: 25px;
+    font-size: 16px;
+}
+
+.try-item__row{
+    display: flex;
+}
+.section-item-2-title, .try-item__row:not(:last-child){
+    margin-bottom: var(--item-Spacing);
+}
+
+.try-symbol{
+    width: 50px;
+    height: 42px;
+    border-radius: 13px;
+    margin-right: 20px;
+    margin: 10px 20px 0px 0px;
+}
+.symbol-1{
+    background-color: #F0BB1F;
+}
+.symbol-2{
+    background-color: #F15A2B;
+}
+.symbol-3{
+    background-color: #006380;
+}
+.try-content-title{
+    font-weight: bold;
+}
+
+/* =============== SECTION 3 ================ */
+.section-item-1  .section-item__heading, .section-item-3 .section-item__heading{
+    display: block;
+    text-align: center;
+}
+.section-item-3{
+    --col-number: 4;
+    --space-col: 25px;
+}
+
+.discover-item{
+    width: 100%;
+    min-width: 250px;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.discover-item-img img, .nearest-place-item-img img{
+    width: 100%;
+    height: auto;
+    
+}
+.discover-item-info{
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.discover-item-info-line{
+    margin: 5px 0px;
+    display: flex;
+}
+.discover-item-info-line:first-child{
+    justify-content: space-between;
+}
+
+/* =============== SECTION 4 ================ */
+.section-item-4{
+    --col-number: 3;
+    --space-col: 25px;
+}
+.section-item-4 input{
+    display: none;
+}
+.section-item-4 .section-item__heading{
+    position: relative;
+    top: 20px;
+}
+
+/* =============== SLIDER CSS ================ */
+.slides{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.slide{
+    position: absolute;
+    top: 0px;
+    padding: 10px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+}
+.navigation-manual{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.manual-btn{
+    background-color: #E5E5E5;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:hover{
+    background-color: #39425D;
+}
+.manual-btn:not(:last-child){
+    margin-right: 15px;
+}
+
+#radio1:checked ~ .slider .slides .slide-1,
+#radio2:checked ~ .slider .slides .slide-2,
+#radio3:checked ~ .slider .slides .slide-3{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#radio1:checked ~ .navigation-manual label[for="radio1"],
+#radio2:checked ~ .navigation-manual label[for="radio2"],
+#radio3:checked ~ .navigation-manual label[for="radio3"]{
+    background-color: #39425D;
+
+}
+

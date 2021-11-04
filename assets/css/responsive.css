@@ -1,0 +1,28 @@
+@media(min-width: 1024px) and (max-width: 1239px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+   
+    
+}
+@media (max-width: 739px) {
+    .section-item{
+        padding: 0px 10px ;
+    }
+    .section-item-4 .section-item__heading{
+        display: block;
+        text-align: center;
+    }
+    .section-item-4{
+        --col-number: 1;
+        --space-col: 0;
+    }
+    
+}
+@media (max-width: 450px) {
+   
+    
+}
+
+@media (max-width: 320px) {}
