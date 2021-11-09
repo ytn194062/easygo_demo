@@ -1,0 +1,132 @@
+
+.ques-container{
+     /* display: flex;
+    flex-wrap: wrap; 
+      min-width: 100%;  */
+    --col-number: 3;
+    --space-col: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.row{
+    height: 100vh; 
+}
+.col{
+    flex: 50%;
+}
+.col__item-1{
+    background: linear-gradient(180.1deg, #E40857 -2.79%, rgba(18, 0, 227, 0.469131) 108.1%, rgba(4, 56, 158, 0) 152.22%, #0E5EFA 152.22%);;
+}
+.center{
+    text-align: center;
+}
+.col__item-2{
+    background-color: #FFFFFF;
+    font-size: 30px;
+    margin: auto;
+    /* text-align: center; */
+    /* color: rgba(0, 0, 0, 0.5); */
+}
+.color-1{
+    color:  rgba(0, 0, 0, 0.5);
+}
+.question{
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 100px 0px 100px 30px; 
+    margin: auto
+}
+.col__item-1 img{
+    width: 200px;
+    margin: 50px;
+}
+/* ==========câu 1 */
+.txt-1-1{
+    width: 298px;
+    height: 62px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    font-size: large;
+    text-align: center;
+    
+}
+.txt-1-2{
+    width: 48px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding: 5px;
+    
+}
+.ques-content__item{
+    margin: 30px 0;
+}
+/* ================câu 2, 5 */
+.txt-2{
+    border-radius: 15px;
+    width: 459px;
+    height: 177px;
+    font-size: large;
+}
+.ques-content-2{
+    display: block;
+    margin:0% 15%;
+}
+.ques-content__item-1{
+    margin-left: 5%; 
+}
+.color-2{
+    color: black;
+}
+/* ====================câu 3 */
+.txt-3{
+    width: 459px;
+    height: 62px;
+    border-radius: 15px;
+    font-size: large;
+    border: 1px solid blue;
+    padding-left: 15px;
+}
+/* =============câu 4 ,7 ,8*/
+.btn{
+    width: 459px;
+    height: 62px;
+    background-color: white;
+    border:1px solid black ;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold
+}
+.ques-btn{
+    margin: 15px 0;
+}
+/* ==============câu 5 */
+.txt-5{
+    width: 459px;
+    height: 177px;
+    font-size: large;
+    border-radius: 15px;
+}
+
+/* =============câu 6 */
+.ques-content-3{
+    display: flex;
+    justify-content: center;
+}
+.label{
+    margin-bottom: 30px;
+}
+.txt-6{
+    width: 110px;
+    height: 62px;
+    border-radius: 15px;
+    border: 1px solid blue;
+    margin-bottom: 30px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    width: 200px;
+}
