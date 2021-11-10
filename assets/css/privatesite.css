@@ -1,0 +1,37 @@
+ html, body{
+    padding: 0;
+    margin: 0;
+} 
+.pri__item-1{
+    color: #6246E5;
+    margin: 40px auto;
+    text-align: center;
+}
+.pri__item-2{
+width: 90%;
+display: block;
+margin: 0px auto;
+}
+.col{
+    margin-right: 5%;
+}
+.row{
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 5%;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: rgb(121, 118, 118);
+}
+h1{
+    font-weight: bold;
+}
+.intro{
+    position: absolute;
+    left: 100px;
+    top: 240px;
+    color: #FFFFFF;
+}
