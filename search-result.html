@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>EasyGo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/search-result.css" rel="stylesheet">
         <link href="assets/css/responsive.css" rel="stylesheet">
         <link href="assets/css/base.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Volkhov&Nunito+Sans:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Volkhov&Nunito+Sans:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,8 +20,8 @@
                 <div class="wide">
                     <div class="main-header">
                         <div class="header__logo self">
-                            <a href="#" class="header__logo-link">
-                                <img src="./assets/img/EASYGO_white.png" alt="">
+                            <a href="./index.html" class="header__logo-link">
+                                <img src="./assets/img/EASYGO_logo.png" alt="">
                             </a>     
                         </div>
             
@@ -31,11 +30,9 @@
                                 <input type="radio" hidden checked id="tab1" name="selection">
                                 <label for="tab1" class="header__middle-item header__middle-button header__middle-button--active">Places to Stay</label>
                                 <input type="radio" hidden  id="tab2" name="selection">
-                                <!-- <label for="tab2" class="header__middle-item header__middle-button">Experiences</label>   -->
-                                <a href="./discover.html" class="header__middle-item header__middle-link">
-                                    Experiences</a>
+                                <label for="tab2" class="header__middle-item header__middle-button">Experiences</label>  
                                   <!-- Trai nghiem truc tuyến chức năng rỗng -->
-                                <a href="./discover.html" class="header__middle-item header__middle-link">Online Experiences</a>
+                                <a href="#" class="header__middle-item header__middle-link">Online Experiences</a>
                             </div>
     
                             <div class="header__middle-fixed">
@@ -392,431 +389,406 @@
                 </div>
             </div>
     
-            <div class="header__content">
-                <h5 class="header__content__text">Welcome to visit my homepage</h5>
-                <a href="#" class="header__content__btn">Visit something?</a>
-            </div>
-    
-            <div class="header-mobile">
-                <div class="header-mobile-btn">
-                    <div class="header-mobile-btn-content">
-                        <i class="fas fa-search"></i>
-                        Bạn sắp đi đâu?
-                    </div>
-                </div>
-            </div>
-    
         </header>
 
-        <section class="section-item-1 section-item">
+        <div class="filter">
+            <a href="">
+                <div class="filter-content">
+                    <span class="filter-title">Filter</span>
+                <span class="filter-icon"><i class="fas fa-sort-amount-down"></i></span>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="hotel-gallery">
             <div class="wide">
-                <h1 class="section-item__heading">Explore nearby</h1>
                 <div class="row">
                     <div class="col">
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/Đà Lạt.jpg" alt="">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/Hilton Hanoi Opera.jpg" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Hilton Hanoi Opera</div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Đà Lạt</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
                                     </div>
-                                </a>
-                        </div>
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/Hạ Long.jpg" alt="">
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Vịnh Hạ Long</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/Đà Nẵng.jpg" alt="">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/InterContinental Hanoi Westlake.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>InterContinental Hanoi Westlake</div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Đà Nẵng</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
                                     </div>
-                                </a>
-                        </div>
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/hà nội.jpg" alt="">
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Hà Nội</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/Cn_Th.jpg" alt="">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/Lotte Hotel Hanoi.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Lotte Hotel Hanoi</div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Cần Thơ</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
                                     </div>
-                                </a>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/Vũng tàu.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/Sofitel Legend Metropole Hanoi Hotel.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Sofitel Legend Metropole Hanoi Hotel  </div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Vũng Tàu</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
                                     </div>
-                                </a>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/Đảo Phú Quốc.jpg" alt="">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/Time Hotel.webp " alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Time Hotel</div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Đảo Phú Quốc</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
                                     </div>
-                                </a>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="nearest-place-item">
-                                <a href="./search-result.html">
-                                    <div class="nearest-place-item-img">
-                                        <img src="./assets/img/main_site/Nha Trang.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/JW Marriott Hotel Hanoi.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>JW Marriott Hotel Hanoi</div>
                                     </div>
-                                    <div class="nearest-place-item-info">
-                                        <div class="nearest-place-info-line">
-                                            <div class="nearest-place-item-title">Nha Trang</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>Lorem ipsum, dolor sit.</div>
-                                        </div>
-                                        <div class="nearest-place-info-line">
-                                            <div>
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">300km</span>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-dollar-sign"></i>
-                                                <span class="discover-item-duration">300/person</span>
-                                            </div>
-                                        </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
                                     </div>
-                                </a>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/Langmandi Apartment.jpg " alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Langmandi Apartment</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/PentStudio West Lake Hanoi.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>PentStudio West Lake Hanoi</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/Roygent Parks Hanoi.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Roygent Parks Hanoi</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/InterContinental Hanoi Westlake.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>InterContinental Hanoi Landmark72</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/mới/LotusHomestay Hanoi.jpg" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>LotusHomestay Hanoi</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/mới/Oakwood Residence Hanoi.webp" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Oakwood Residence Hanoi</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/mới/Scent Premium Hotel.jpg" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Scent Premium Hotel</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/mới/Solaria Hanoi Hotel.jpg" alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Solaria Hanoi Hotel</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hotel-item">
+                            <a href="#">
+                                <div class="hotel-item-img">
+                                    <img src="./assets/img/search_result/mới/Somerset West Point Hanoi.webp " alt="">
+                                </div>
+                                <div class="hotel-item-info">
+                                    <div class="hotel-item-title">
+                                        <div>Somerset West Point Hanoi</div>
+                                    </div>
+                                    
+                                    <div class="hotel-item-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                        <span>(10)</span>
+                                    </div>
+
+                                    <div class="hotel-item-price">
+                                        <div>491,520.47 VND</div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="section-item-2 section-item">
+        </div>
+
+        <div class="page-number">
             <div class="wide">
                 <div class="row">
-                    <div class="col section-item-2-content-col">
-                        <div class="section-item-2-title">
-                            <h3>Easy and fast</h3>
-                            <div class="section-item__heading">Try Hosting</div>
-                        </div>
-                        <div class="try-item__row">
-                            <div class="try-symbol symbol-1"></div>
-                            <div class="try-content">
-                                <div class="try-content-title">How we estimate your earnings potential</div> 
-                                <div class="try-content-script">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            </div>
-                        </div>
-                        <div class="try-item__row">
-                            <div class="try-symbol symbol-2"></div>
-                            <div class="try-content">
-                                <div class="try-content-title">How we estimate your earnings potential</div> 
-                                <div class="try-content-script">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            </div>
-                        </div>
-                        <div class="try-item__row">
-                            <div class="try-symbol symbol-3"></div>
-                            <div class="try-content">
-                                <div class="try-content-title">How we estimate your earnings potential</div> 
-                                <div class="try-content-script">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col section-item-2-box-col">
-                        <div class="try-box">
-                                <a href="">
-                                    <div class="try-hosting-item-img">
-                                        <img src="./assets/img/main_site/try_hosting.jpg" alt="">
-                                    </div>
-                                    <div class="try-hosting-item-info">
-                                        <div class="try-hosting-item-title">
-                                            <div>Lorem ispsum</div>
-                                            <div>Lorem ipsum</div>
-                                        </div>
-                                        
-                                        <div class="try-hosting-item-info-icons">
-                                            <i class="fas fa-gem"></i>
-                                            <i class="fas fa-map"></i>
-                                            <i class="fas fa-location-arrow"></i>
-                                        </div>
-
-                                        <div class="try-hosting-item-info-number">
-                                            <i class="far fa-building"></i>
-                                            <span>24 people going</span>
-                                            <i class="far fa-heart" style="float: right;"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                        </div>
-                        <div class="try-box-background">
-                        </div>
+                    <div class="page-number-list">
+                        <a href="#"><div class="page page-1">1</div></a>
+                        <a href="#"><div class="page page-2">2</div></a>
+                        <a href="#"><div class="page page-3">3</div></a>
+                        <a href="#"><div class="page pages">...</div></a>
+                        <a href="#"><div class="page page-10">10</div></a>
                     </div>
                 </div>
             </div>
-            
-        </section>
-        
-        <section class="section-item-3 section-item">
-                    <div class="wide">
-                        <h2 class="section-item__heading">Discover Things To Do</h2>
-                        <div class="row">
-                            <div class="col">
-                                <div class="discover-item">
-                                    <a href="#">
-                                        <div class="discover-item-img">
-                                            <img src="./assets/img/main_site/discover_1.jpeg" alt="" style="width: 110%; position: relative; ">
-                                        </div>
-                
-                                        <div class="discover-item-info">
-                                            <div class="discover-item-info-line">
-                                                <div class="discover-item-name">Bai Dinh Pagoda- Trang An Boat Cave Tour</div>
-                                            </div>
-                                            <div class="discover-item-info-line">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">3 Days Trip</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                    <div class="discover-item">
-                                        <a href="#">
-                                            <div class="discover-item-img">
-                                                <img src="./assets/img/main_site/discover_2.jpg" style="width: 160%; position: relative; right: 100px;" alt="">
-                                            </div>
-                    
-                                            <div class="discover-item-info">
-                                                <div class="discover-item-info-line">
-                                                    <div class="discover-item-name">Learn How to Shoot Film Photos in Hanoi</div>
-                                                </div>
-                                                <div class="discover-item-info-line">
-                                                    <i class="fas fa-map-marker-alt"></i>
-                                                    <span class="discover-item-duration">1 Days Trip</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                            </div>  
-
-                            <div class="col">
-                                <div class="discover-item">
-                                    <a href="#">
-                                        <div class="discover-item-img">
-                                        <img src="./assets/img/main_site/discover_3.jpeg" style=" position: relative; bottom: 20px;" alt="">
-                                        </div>
-                        
-                                        <div class="discover-item-info">
-                                            <div class="discover-item-info-line">
-                                                <div class="discover-item-name">Ha Long Bay Day Cruise With Express Bus</div>
-                                            </div>
-                                            <div class="discover-item-info-line">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span class="discover-item-duration">2 days trip</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-        </section>
-
-        <section class="section-item-4 section-item">
-                <div class="wide">
-                    <div class="row section-item-4__row">
-                        <div class="col">
-                            <h2 class="section-item__heading">What People Say About Us.</h2>
-                        </div>
-
-                        <div class="col">
-                            <input type="radio" name="radio-btn" id="radio1" checked>
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <div class="slider">
-                                <div class="slides">
-                                    <div class="slide slide-1">
-                                        <p>"Chất lượng dịch vụ tuyệt vời! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore dolor deleniti tenetur nobis nesciunt, suscipit dolorem ipsum itaque autem amet a aliquam voluptatibus reprehenderit ea cumque adipisci voluptas harum!" <br>Lorem isum<br>Huy Hoàng
-                                        </p>
-                                    </div>
-                                    <div class="slide slide-2">
-                                        <p>"Trải nghiệm thú vị. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore dolor deleniti tenetur nobis nesciunt, suscipit dolorem ipsum itaque autem amet a aliquam voluptatibus reprehenderit ea cumque adipisci voluptas harum!" <br>Lorem isum<br>Thanh Phương
-                                        </p>
-                                    </div>
-                                    <div class="slide slide-3">
-                                        <p>"Đặt phòng nhanh chóng, tiện lợi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore dolor deleniti tenetur nobis nesciunt, suscipit dolorem ipsum itaque autem amet a aliquam voluptatibus reprehenderit ea cumque adipisci voluptas harum!" <br>Lorem isum<br>Ngọc Phụng
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="navigation-manual">
-                                <label for="radio1" class="manual-btn"></label>
-                                <label for="radio2" class="manual-btn"></label>
-                                <label for="radio3" class="manual-btn"></label>
-                            </div>
-                        </div>
-                        
-
-                        
-                    </div>
-                </div>
-        </section>
-
-        <section class="section-item-5 section-item">
-            <div class="wide">
-                <div class="subscribe">
-                    <div class="subscribe__icon">
-                        <i class="glyphicon glyphicon-send"></i>
-                    </div>
-                    <div class="subscribe--item1">
-                        <div class="subscribe--item1--text">
-                            <p>Subscribe to get information, lasted news and other<br>
-                                        interesting offers about... </p>
-                        </div>
-                    </div>
-                    <div class="subscribe__form">
-                        <input type="text" name="confirm"  placeholder="Your email" class="subscribe__input--email">
-                        <input type="button" name="Subscribe" value="Subscribe" class="subscribe__button">
-                    </div>
-                </div>
-            </div>
-            
-        </section>  
+        </div>
 
         <footer>
             <div class="footer">
@@ -896,7 +868,6 @@
                 <p>All rights Reserved @easygo.com</p>
             </div>
         </footer>
-        
 
     </body>
 </html>
