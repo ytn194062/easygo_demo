@@ -67,6 +67,7 @@
     display: flex;
     font-weight: bold;
     font-size: 18px;
+    justify-content: center;
 }
 .page-number-list a{
     margin-right: 25px;
