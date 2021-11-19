@@ -20,6 +20,7 @@
     }
     
 }
+
 @media (max-width: 739px) {
     /* ==========MAIN SITE========== */
     .section-item{
@@ -42,9 +43,10 @@
         margin-top: 120px;
     }
 }
+
 @media (max-width: 450px) {
-   
-    
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    
+}
