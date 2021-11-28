@@ -11,7 +11,12 @@
 width: 90%;
 display: block;
 margin: 0px auto;
+position: relative;
+/* background-image: url(../img/privatesite.png) ;
+background-repeat: no-repeat;
+background-size: contain; */
 }
+
 .col{
     margin-right: 5%;
 }
@@ -20,6 +25,7 @@ margin: 0px auto;
     font-size: xx-large;
     margin-top: 5%;
 }
+
 a{
     color: black;
 }
@@ -31,7 +37,82 @@ h1{
 }
 .intro{
     position: absolute;
-    left: 100px;
-    top: 240px;
+    left: 5%;
+    top: 12%;
     color: #FFFFFF;
+}
+.intro p{
+    margin-bottom: 0;
+}
+.margin-self{
+    height:30px;
+    margin-top:20px;
+}
+#dppc-none{
+    display:none;
+}
+
+/* PC >=1024px */
+@media only screen and (min-width:64em) {
+    #dppc-none {
+        display: none;
+        /* color:red */
+    }
+}
+
+
+
+/* Mobile và tablet chung <1024px */
+@media only screen and (max-width: 63.9375em) {
+
+    #dp-none {
+        display: none;
+    }
+    #dppc-none {
+        display: block;
+        width: 100%;
+    }
+   
+}
+
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
+
+/* Mobile */
+@media only screen and (max-width:46.1875em) {
+    .intro h3{
+        font-size:14px;
+    }
+    .intro p {
+        font-size:10px;
+    }
+    #dppc-none{
+            margin-top: 32px;
+            --col-number: 8;
+            --space-col: 10px;
+
+    }
+    .heading-mobile .row{
+        flex-wrap: nowrap!important;
+        /* justify-content:flex-start; */
+        
+    }
+     .heading-mobile .row .col{
+        flex-basis: 10%;
+     }
+    .self-wide {
+        width: 100%;
+        /* margin: 0 auto !important; */
+    }
+    #row-self {
+        min-width: 788px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+ 
+   
+    
+
 }
