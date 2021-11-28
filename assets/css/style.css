@@ -272,7 +272,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
 .manual-btn {
@@ -374,7 +373,7 @@
 }
 
 /* -----------------DISCOVER THING */
-.discover-self {}
+
 
 .discover-total__heading {
     margin: 40px 20px;
