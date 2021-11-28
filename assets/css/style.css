@@ -181,7 +181,9 @@
 
 }
 
-
+.try-hosting-mobile{
+    display: none;
+}
 /* =============== SECTION 3 ================ */
 .section-item-1 .section-item__heading,
 .section-item-3 .section-item__heading {
@@ -272,7 +274,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
 .manual-btn {
@@ -372,9 +373,51 @@
     border-radius: 20px;
     border: hidden;
 }
-
+/* responsive-mainPage */
+@media  (max-width:376px){
+    .hide-on-mobile{
+        display: none;
+    }
+    
+    .display-block{
+        display: block;
+    }
+    body .wide{
+        font-size:65% !important;
+        overflow-x: hidden; 
+        width: 316px;
+    }
+    .header{
+        background: url(../img/main_site/background__moble.jpg) center / cover no-repeat;
+    }
+   .try-hosting-mobile{
+    position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+   }
+   
+   .try-mobile__img>img
+   {    
+    width: 90%;
+        border-radius:15px ;
+    }
+   .hosting__text{
+       position: absolute;
+       width: 70%;
+       color: var(--white-color);
+       font-weight: bold;
+       font-size: 30px;
+       text-align: center;
+       left: 50%;
+       transform:translateX(-50%); 
+   }
+   .flex-colum{
+        display: flex;
+        flex-direction: column;
+   }
+   
+}
 /* -----------------DISCOVER THING */
-.discover-self {}
+
 
 .discover-total__heading {
     margin: 40px 20px;
@@ -524,19 +567,23 @@ color:rgb(136, 136, 211);
 }
 
 
+
+
+
+
 /* PC >=1024px */
 @media only screen and (min-width:64em) {
 
 }
-/* PC >=1024px */
+/* PC >=1024px*/
 @media only screen and (min-width:64em) {
 
 }
 /* Mobile */
 
 @media only screen and (max-width:46.1875em) {
-    /* Heading bottom */
-    .discover-bottom__heading {
+    /* Heading bottom */ 
+     .discover-bottom__heading {
         margin-top: 32px;
         --col-number: 4;
         --space-col: 16px;
@@ -563,16 +610,10 @@ color:rgb(136, 136, 211);
      }
      .discover__introduce--img{
 
-     }
-       
+     } 
 
 
-
-
-
-
-
-}
+} 
   
     
 

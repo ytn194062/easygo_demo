@@ -277,7 +277,9 @@ body.disabled-scroll {
     display: block;
 }
 
-
+.header__right{
+  display: flex;  
+}
 .header__right-item {
     height: 42px;
     background-color: transparent;

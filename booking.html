@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="./assets/css/base.css">
    <link rel="stylesheet" href="./assets/css/booking.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,20 +19,22 @@
     <header class="booking-header wide">
         <div class="booking-header--container ">
             <div class="header--logo">
-                <a href="#"><img src="./assets/img/EASYGO_logo.png" alt="" ></a>
+                <a href="./index.html"><img src="./assets/img/EASYGO_logo.png" alt="" ></a>
             </div>
-            <div class="header--menu">
-                <ul class="header--menu__ul">
+            <div class="header--menu  hide-on-mobile">
+                <ul class="header--menu__ul ">
                    <li><a href="#">Photos</a> </li> 
                    <li> <a href="#">Amenities</a></li> 
                     <li><a href="#">Review</a> </li> 
                     <li><a href="#">Location</a></li> 
+                 
                 </ul> 
             </div>
+            <div >   <i class="fa fa-user-o " ></i></div>
             
         </div>
          <hr>
-         <p class="header--text">Hanoi,VietNam > Art and Culture > Art > Photography</p>   
+         <a href=""><p class="header--text">Hanoi,VietNam > Art and Culture > Art > Photography</p>   </a>
     </header>
     <!-- section1 -->
     <div class="booking--section1 wide "> 
@@ -49,26 +52,24 @@
             <div class="hotel-img__item">
                 <img src="./assets/img/booking_site/khachSan1.jpg" alt="">
             </div>
-            <div class="hotel-img__item">
+            <div class="hotel-img__item hide-on-mobile">
                 <img src="./assets/img/booking_site/khachSan3.jpg" alt="">
             </div>
             <div class="hotel-img__item img3 flexcol">
                 <div class="hotel-img--imgsmall">
                     <img src="./assets/img/booking_site/khachSan2.jpg" alt="">
                 </div>
-                <div class="hotel-img--imgsmall">
+                <div class="hotel-img--imgsmall ">
                     <img src="./assets/img/booking_site/khachSan10.jpg" alt="">
                 </div>
             </div>
-            <div class="hotel-img__item">
+            <div class="hotel-img__item hide-on-mobile">
                 <img src="./assets/img/booking_site/khachSan9.jpg" alt="">
             </div>
-            <!-- <div class="hotel-img__item">
-                <img src="./assets/img/booking_site/khachSan4.jpg" alt="">
-            </div> -->
+            
         </div>
-        <div class="section1__btn">
-            <a href="#"><button class="btn">Xem thêm</button></a>
+        <div class="section1__btn btn--hover">
+            <a href="#"><button class="s1_btn--item ">Xem thêm</button></a>
         </div>
     </div>
     <!-- section2 -->
@@ -81,10 +82,10 @@
                 <input type="radio" name="radio-feedback" id="radio-fb4">
             
                 <div class="booking__feedback  ">
-                    
+                  
                     <div class="feedback--content feedback--content1">
                         <div class="feedback__text">
-                           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem, nostrum esse deleniti dolor distinctio blanditiis officia dolore rem omnis nam iste at quod. Earum non quis laborum nobis aperiam.</p>
+                           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem, nostrum esse deleniti dolor distinctio blanditiis officia dolore rem omnis nam iste at quod</p>
                            <div class="feedback__img">
                                 <img class="feedback__img--user" src="./assets/img/booking_site/khachSan5.jpg" alt="">
                             </div>
@@ -126,8 +127,9 @@
                         </div>
 
                     </div>
+                
                 </div>   
-               
+               <div class="feedback-bg"></div>
     
             </div>
             <div class="booking__control--fb">
@@ -145,7 +147,7 @@
                     Show all price
                 </p>
             </div>
-            <div class="filter-find booking--border ">
+            <div class="filter-find booking--border hide-on-mobile ">
                 <div class="place-text "><input type="text" value=" Hà" ></div>
                 <div class="add-date filter__search-item">
                     <input id="add-date" type="text" placeholder="Add date">
@@ -153,7 +155,7 @@
                 </div>
                 <div><span class="glyphicon glyphicon-search"></span></div>
             </div>
-            <div class="filter-place booking--border">
+            <div class=" hide-on-mobile filter-place booking--border">
                     <div class="filter-place">
                         <p><span class="glyphicon glyphicon-map-marker"></span> Hà Nội, Việt Nam </p>
                     </div>
@@ -165,8 +167,8 @@
                     </div>
                 
             </div>
-            <div >
-                <button class=" filter__btn booking--border">Buy</button>
+            <div class="btn--hover ">
+                <button class=" filter__btn booking--border ">Buy</button>
             </div>
         </div>
     </div>
@@ -175,66 +177,76 @@
     <div class="booking--section3 wide">
         <p class="text-title">Similar hotel</p>
         <div class="similar-hotel"><!--slider-->
-            <div class="similar-hotel--items"><!--slides-->
                 <input type="radio" name="similar-radio" id="similar-radio1" checked>
                 <input type="radio" name="similar-radio" id="similar-radio2" >
                 <input type="radio" name="similar-radio" id="similar-radio3" >
                 <input type="radio" name="similar-radio" id="similar-radio4" >
-                
-
+        
                 <div class="similar-hotel--item similar--item1">
                     <div class="similar-slider">
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img">
-                                <img src="./assets/img/booking_site/KhachSan2.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>Mango Bay Resort</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img">
+                                    <img src="./assets/img/booking_site/KhachSan2.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>Mango Bay Resort</p>
+                                </div>
+                            </a>
                         </div> 
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img">
-                                <img src="./assets/img/booking_site/KhachSan3.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>VinOasis Phu Quoc </p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img">
+                                    <img src="./assets/img/booking_site/KhachSan3.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>VinOasis Phu Quoc </p>
+                                </div>
+                            </a>
                         </div>   
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img  ">
-                                <img src="./assets/img/booking_site/KhachSan1.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>Dusit Princess Beach Resort</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img  ">
+                                    <img src="./assets/img/booking_site/KhachSan1.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>Princess Beach Resort</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="similar-hotel--item  similar--item2">
                     <div class="similar-slider">
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img">
-                                <img src="./assets/img/booking_site/khachSan3.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>Mango Bay Resort 1</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img">
+                                    <img src="./assets/img/booking_site/khachSan3.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>Mango Bay Resort 1</p>
+                                </div>
+                            </a>
                         </div> 
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img">
-                                <img src="./assets/img/booking_site/KhachSan2.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>VinOasis Phu Quoc 1</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img">
+                                    <img src="./assets/img/booking_site/KhachSan2.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>VinOasis Phu Quoc 1</p>
+                                </div>
+                            </a>
                         </div>   
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img  ">
-                                <img src="./assets/img/booking_site/khachSan4.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>Dusit Princess Moonrise Beach Resort 2</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img  ">
+                                    <img src="./assets/img/booking_site/khachSan4.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>Dusit Princess Moonrise Beach Resort 2</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -251,53 +263,61 @@
                             </a>
                         </div> 
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img">
-                                <img src="./assets/img/booking_site/KhachSan3.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>VinOasis Phu Quoc 1</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img">
+                                    <img src="./assets/img/booking_site/KhachSan3.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>VinOasis Phu Quoc 1</p>
+                                </div>
+                            </a>
                         </div>   
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img  ">
-                                <img src="./assets/img/booking_site/KhachSan1.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>Dusit Princess Resort 3</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img  ">
+                                    <img src="./assets/img/booking_site/KhachSan1.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>Dusit Princess Resort 3</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="similar-hotel--item  similar--item4">
                     <div class="similar-slider">
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img">
-                                <img src="./assets/img/booking_site/KhachSan2.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>Mango  Resort </p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img">
+                                    <img src="./assets/img/booking_site/KhachSan2.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>Mango  Resort </p>
+                                </div>
+                            </a>
                         </div> 
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img">
-                                <img src="./assets/img/booking_site/KhachSan4.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>VinOasis Phu Quoc </p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img">
+                                    <img src="./assets/img/booking_site/KhachSan4.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>VinOasis Phu Quoc </p>
+                                </div>
+                            </a>
                         </div>   
                         <div class="similar-slider--item">
-                            <div class="similar-hotel__img  ">
-                                <img src="./assets/img/booking_site/KhachSan1.jpg" alt="">
-                            </div>
-                            <div class="similar-hotel__text">
-                                <p>Dusit Princess Resort 4</p>
-                            </div>
+                            <a href="">
+                                <div class="similar-hotel__img  ">
+                                    <img src="./assets/img/booking_site/KhachSan1.jpg" alt="">
+                                </div>
+                                <div class="similar-hotel__text">
+                                    <p>Dusit Princess Resort 4</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-              
-            </div>
             
         </div>
         <div class="similar__lables">
@@ -357,7 +377,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer__media">
+            <div class="footer__media hide-on-mobile">
                <div class="footer__media--socialIcon">
                     <a href="#">
                         <i class="fa fa-facebook" ></i> 
