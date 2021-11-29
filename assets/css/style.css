@@ -181,7 +181,9 @@
 
 }
 
-
+.try-hosting-mobile{
+    display: none;
+}
 /* =============== SECTION 3 ================ */
 .section-item-1 .section-item__heading,
 .section-item-3 .section-item__heading {
@@ -526,3 +528,48 @@ color:rgb(136, 136, 211);
     margin: 5px 25px 5px;
 }
 
+/* responsive-mainPage */
+@media  (max-width:376px){
+    .hide-on-mobile{
+        display: none;
+    }
+    
+    .display-block{
+        display: block;
+    }
+    body .wide{
+        font-size:65% !important;
+        overflow-x: hidden; 
+        width: 316px;
+    }
+    .header{
+        background: url(../img/main_site/background__moble.jpg) center / cover no-repeat;
+    }
+   .try-hosting-mobile{
+    position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+   }
+   
+   .try-mobile__img>img
+   {    
+    width: 90%;
+        border-radius:15px ;
+    }
+   .hosting__text{
+       position: absolute;
+       width: 70%;
+       color: var(--white-color);
+       font-weight: bold;
+       font-size: 30px;
+       text-align: center;
+       left: 50%;
+       transform:translateX(-50%); 
+   }
+   .flex-colum{
+        display: flex;
+        flex-direction: column;
+   }
+   .slides{
+       width:50%;
+   }
+}
