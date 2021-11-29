@@ -635,9 +635,9 @@ color:rgb(136, 136, 211);
      .discover__introduce--img .row{
          overflow: hidden;
      }
-     .discover__introduce--img #display-n{
+     /* .discover__introduce--img #display-n{
          display: none;
-     }
+     } */
 
 
 
