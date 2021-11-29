@@ -588,9 +588,15 @@ color:rgb(136, 136, 211);
     #display-n{
         display:none
     }
+    .discover__content--img .row,
+    .discover__introduce--img .row {
+             width: 100%;
+             margin-left:50%;
+             transform: translateX(-50%);
+    }
+
+
 }
-
-
 /* Mobile */
 @media only screen and (max-width:46.1875em) {
     /* Heading bottom */ 
@@ -615,6 +621,7 @@ color:rgb(136, 136, 211);
      .discover__introduce--img .row
      {
          flex-direction: column;
+         width: 100%;
          margin-left:50%;
          transform: translateX(-50%);
      }
