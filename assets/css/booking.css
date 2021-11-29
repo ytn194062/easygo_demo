@@ -72,7 +72,11 @@ hr{
 .hotel-start{
     color: #febb02;
 }
-
+.hotel-img{
+   
+    /* justify-content: space-around; */
+     
+}
 .hotel-img__item{
     border: 2px black;
     width: 30%;
