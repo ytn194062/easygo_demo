@@ -81,6 +81,7 @@ h1{
 
 /* Mobile */
 @media only screen and (max-width:46.1875em) {
+
     .intro h3{
         font-size:14px;
     }
@@ -89,7 +90,7 @@ h1{
     }
     #dppc-none{
             margin-top: 32px;
-            --col-number: 8;
+            --col-number: 5;
             --space-col: 10px;
 
     }
@@ -99,14 +100,22 @@ h1{
         
     }
      .heading-mobile .row .col{
-        flex-basis: 10%;
+        /* flex-basis: 10%; */
+     }
+     .col {
+         margin-right: 0;
+     }
+     .heading-mobile a{
+         display: inline-block;
+         width: 100%;
+         font-size:20px
      }
     .self-wide {
         width: 100%;
         /* margin: 0 auto !important; */
     }
     #row-self {
-        min-width: 788px;
+        /* min-width: 788px; */
         margin: 0 auto;
         overflow: hidden;
     }
