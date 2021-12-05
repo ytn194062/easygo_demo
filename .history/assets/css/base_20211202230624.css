@@ -907,9 +907,9 @@ body.disabled-scroll {
 /* Mobile */
 @media only screen and (max-width:46.1875em) {
 
-.header__middle,
+/* .header__middle, */
 .header__right-button,
-.hide-on-mobile
+/* .hide-on-mobile */
 {
     display: none;
 }

@@ -68,10 +68,10 @@ function changeTab1() {
     if(active != null) {
         active.classList.remove('header__search-item--active');
     }
-    // takeRoom.classList.remove('hide');
-    // checkOut.classList.remove('hide');
-    // customer.classList.remove('hide');
-    // day.classList.remove('display-flex');
+    takeRoom.classList.remove('hide');
+    checkOut.classList.remove('hide');
+    customer.classList.remove('hide');
+    day.classList.remove('display-flex');
 
     const placeSubTab1 = document.querySelector('.header__search-place-sub-tab1');
 
@@ -80,7 +80,7 @@ function changeTab1() {
     }
 
     const placeSubTab2 = document.querySelector('.header__search-place-sub-tab2');
-    // placeSubTab2.classList.add('hide');
+    placeSubTab2.classList.add('hide');
 
     if (takeRoomSub.classList.contains('header__search-take-room-sub--tab2')) {
         takeRoomSub.classList.remove('header__search-take-room-sub--tab2'); 
@@ -168,164 +168,6 @@ for (const minusBtn of minusBtnList) {
             customerSubItemNum.innerHTML = numCurrent - 1;
             if (customerSubItemNum.innerHTML == 0) {
                 disabledBtn(minusBtn);
-            }
-        }
-    }
-}
-
-/**-------------------Plus------------------ */
-
-const plusBtnList = document.querySelectorAll('.header__search-customer-sub__plus');
-
-for (const plusBtn of plusBtnList) {
-    plusBtn.onclick = function plus() {
-        const customerSubItemCurrent = plusBtn.parentElement.parentElement;
-        const customerSubItemNum = customerSubItemCurrent.querySelector('.header__search-customer-sub__number');
-      
-        const customerSubItemMinus = customerSubItemCurrent.querySelector('.header__search-customer-sub__minus.header__search-customer-sub__button--disabled');
-       
-        if (customerSubItemMinus) {
-            removeDisabledBtn(customerSubItemMinus);
-        }
-        const numCurrent = +customerSubItemNum.innerHTML;
-        customerSubItemNum.innerHTML = numCurrent + 1;
-    }
-}
-
-/** --------------Disabled Minus-------------- */
-const customerSubItemList = document.querySelectorAll('.header__search-customer-sub__item');
-for (const customerSubItem of customerSubItemList) {
-    const customerSubItemNum = customerSubItem.querySelector('.header__search-customer-sub__number');
-    const customerSubItemMinus = customerSubItem.querySelector('.header__search-customer-sub__minus');
-    if (+customerSubItemNum.innerHTML == 0) {
-        disabledBtn(customerSubItemMinus);
-    } 
-}
-
-
-function disabledBtn(minusBtn) {
-    minusBtn.classList.add('header__search-customer-sub__button--disabled');
-}
-
-function removeDisabledBtn(minusBtn) {
-    minusBtn.classList.remove('header__search-customer-sub__button--disabled');
-}
-
-
-/**-----------------------Header fixed---------------------- */
-let headerTop = document.querySelector('.header-top');
-let headerMainFixed = document.querySelector('.main-header--fixed');
-let headerMiddleFixed = document.querySelector('.header__middle-fixed');
-let headerMiddleNormal = document.querySelector('.header__middle-normal');
-let overlay = document.querySelector('.overlay');
-
-function hideHeaderFixed() {
-    headerMiddleFixed.classList.remove('hide');
-    headerMiddleNormal.classList.remove('display');
-    header__search.classList.remove('display-flex');
-    headerMainFixed.style.paddingBottom = '0px';
-    if (!modal.classList.contains('display')) {
-        overlay.classList.remove('display');
-    }
-}
-
-
-
-headerMiddleFixed.onclick = function() {
-    headerMiddleFixed.classList.add('hide');
-    headerMiddleNormal.classList.add('display');
-    header__search.classList.add('display-flex');
-    headerMainFixed.style.paddingBottom = 'calc(var(--padding-bottom) + 90px)';
-    overlay.classList.add('display');
-}
-
-
-/**------------------User Sub------------------ */
-let userSub = document.querySelector('.header__right-user-sub');
-let user = document.querySelector('.header__right-user');
-user.onclick = function () {
-    let userSub = document.querySelector('.header__right-user-sub');
-    if (userSub.classList.contains('display')) {
-        userSub.classList.remove('display');
-    } else {
-        userSub.classList.add('display');
-    }
-}
-
-
-function notTarget(e) {
-    /*---------------Clear Header search-------------- ------- */
-    if (!header__search.contains(e.target)) {
-        const active = document.querySelector('.header__search-item--active');
-        if(active != null) {
-            active.classList.remove('header__search-item--active');
-        }
-        const subDisplayed = document.querySelector('.header__search-sub--display');
-        if (subDisplayed) {
-            subDisplayed.classList.remove('header__search-sub--display');
-        }
-
-        if (header__search.classList.contains('header__search--gray')) {
-            header__search.classList.remove('header__search--gray');
-        }
-
-        if (headerSearchCustomer.classList.contains('flex2')) {
-            headerSearchCustomer.classList.remove('flex2')
-        }
-        
-        if (headerSearchBtn.classList.contains('header__search-btn--full')) {
-            headerSearchBtn.classList.remove('header__search-btn--full');
-        }  
-    }
-
-    /**-------------------Header Main Fixed--------------- */
-    headerMainFixed = document.querySelector('.main-header--fixed');
-    if ((headerTop.classList.contains('main-header--fixed'))&&(!headerMainFixed.contains(e.target))) {
-        hideHeaderFixed();
-    }
-
-    let userSub = document.querySelector('.header__right-user-sub');
-    let user = document.querySelector('.header__right-user');
-
-    if (userSub.classList.contains('display') && (!userSub.contains(e.target)) && (!user.contains(e.target))) {
-        userSub.classList.remove('display');
-    }
-
-    /**------------------Modal Language - currency--------------- */
-    
-    
-}
-
-document.onclick = notTarget;
-
-
-
-/*---------------Modal language- currency--------------------------*/
-
-/**-----------------Display Modal  + Overlay------------------ */
-// let modal = document.querySelector('.language-currency-modal');
-headerRightBtn.onclick = function () {
-    modal.classList.add('display');
-    overlay.classList.add('display');
-    document.querySelector('body').classList.add('disabled-scroll');
-}
-/**------------------Header-------------------- */
-let navbarModalItems = document.querySelectorAll('.modal-navbar-item');
-let modalLanguageBody = document.querySelector('.language-modal-body');
-let modalCurrencyBody = document.querySelector('.currency-modal-body');
-for (const item of navbarModalItems) {
-    item.onclick = function () {
-        if (!item.classList.contains('modal-navbar-item--active')) {
-            let navbarItemActive = document.querySelector('.modal-navbar-item--active');
-            navbarItemActive.classList.remove('modal-navbar-item--active');
-            item.classList.add('modal-navbar-item--active');
-
-            if (item.classList.contains('modal-navbar-language')) {
-                modalLanguageBody.classList.remove('hide'); 
-                modalCurrencyBody.classList.remove('display');
-            } else if (item.classList.contains('modal-navbar-currency')) {
-                modalLanguageBody.classList.add('hide');
-                modalCurrencyBody.classList.add('display');
             }
         }
     }

@@ -890,46 +890,6 @@ body.disabled-scroll {
 .header__content__btn:hover {
     box-shadow: 0px 6px 20px rgb(0 0 0 / 16%);
 }
-/* Responsive for header  */
-/* PC >=1024px */
-@media only screen and (min-width:64em) {
-
-}
-/* Mobile và tablet chung <1024px */
-@media only screen and (max-width: 63.9375em) {
-
-}
-/* Hương Lê */
-/* Tablet: width >= 740px and width < 1024px */
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-
-}
-/* Mobile */
-@media only screen and (max-width:46.1875em) {
-
-.header__middle,
-.header__right-button,
-.hide-on-mobile
-{
-    display: none;
-}
-
-.main-header{
-    justify-content: space-around;
-}
-
-
-
-
-}
-
-
-
-
-
-
-
-
 
 /*------------------------Footer---------------------------*/
 

@@ -899,7 +899,6 @@ body.disabled-scroll {
 @media only screen and (max-width: 63.9375em) {
 
 }
-/* Hương Lê */
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
 
@@ -907,15 +906,8 @@ body.disabled-scroll {
 /* Mobile */
 @media only screen and (max-width:46.1875em) {
 
-.header__middle,
-.header__right-button,
-.hide-on-mobile
-{
+.header__middle{
     display: none;
-}
-
-.main-header{
-    justify-content: space-around;
 }
 
 

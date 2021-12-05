@@ -908,7 +908,7 @@ body.disabled-scroll {
 @media only screen and (max-width:46.1875em) {
 
 .header__middle,
-.header__right-button,
+.header__right-button
 .hide-on-mobile
 {
     display: none;

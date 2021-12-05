@@ -68,10 +68,10 @@ function changeTab1() {
     if(active != null) {
         active.classList.remove('header__search-item--active');
     }
-    // takeRoom.classList.remove('hide');
-    // checkOut.classList.remove('hide');
-    // customer.classList.remove('hide');
-    // day.classList.remove('display-flex');
+    takeRoom.classList.remove('hide');
+    checkOut.classList.remove('hide');
+    customer.classList.remove('hide');
+    day.classList.remove('display-flex');
 
     const placeSubTab1 = document.querySelector('.header__search-place-sub-tab1');
 
@@ -80,7 +80,7 @@ function changeTab1() {
     }
 
     const placeSubTab2 = document.querySelector('.header__search-place-sub-tab2');
-    // placeSubTab2.classList.add('hide');
+    placeSubTab2.classList.add('hide');
 
     if (takeRoomSub.classList.contains('header__search-take-room-sub--tab2')) {
         takeRoomSub.classList.remove('header__search-take-room-sub--tab2'); 
@@ -176,14 +176,13 @@ for (const minusBtn of minusBtnList) {
 /**-------------------Plus------------------ */
 
 const plusBtnList = document.querySelectorAll('.header__search-customer-sub__plus');
-
 for (const plusBtn of plusBtnList) {
     plusBtn.onclick = function plus() {
         const customerSubItemCurrent = plusBtn.parentElement.parentElement;
         const customerSubItemNum = customerSubItemCurrent.querySelector('.header__search-customer-sub__number');
-      
+        console.log("~ customerSubItemNum", customerSubItemNum)
         const customerSubItemMinus = customerSubItemCurrent.querySelector('.header__search-customer-sub__minus.header__search-customer-sub__button--disabled');
-       
+        console.log("~ customerSubItemMinus", customerSubItemMinus)
         if (customerSubItemMinus) {
             removeDisabledBtn(customerSubItemMinus);
         }

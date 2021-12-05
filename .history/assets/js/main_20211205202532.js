@@ -176,6 +176,8 @@ for (const minusBtn of minusBtnList) {
 /**-------------------Plus------------------ */
 
 const plusBtnList = document.querySelectorAll('.header__search-customer-sub__plus');
+console.log("~ plusBtnList", plusBtnList)
+console.log("hello")
 
 for (const plusBtn of plusBtnList) {
     plusBtn.onclick = function plus() {

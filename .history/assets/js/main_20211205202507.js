@@ -80,7 +80,7 @@ function changeTab1() {
     }
 
     const placeSubTab2 = document.querySelector('.header__search-place-sub-tab2');
-    // placeSubTab2.classList.add('hide');
+    placeSubTab2.classList.add('hide');
 
     if (takeRoomSub.classList.contains('header__search-take-room-sub--tab2')) {
         takeRoomSub.classList.remove('header__search-take-room-sub--tab2'); 
@@ -176,6 +176,8 @@ for (const minusBtn of minusBtnList) {
 /**-------------------Plus------------------ */
 
 const plusBtnList = document.querySelectorAll('.header__search-customer-sub__plus');
+console.log("~ plusBtnList", plusBtnList)
+console.log("hello")
 
 for (const plusBtn of plusBtnList) {
     plusBtn.onclick = function plus() {
