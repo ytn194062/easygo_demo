@@ -929,16 +929,13 @@ display: none;
     position: relative;
     overflow: visible;
 }
-/* .header__content{
+.header__content{
     display: none;
-} */
+}
 
 .main-header{
     justify-content: space-around;
-    margin-left: -40px;
-}
-.header__logo-link img{
-    width:100px
+        margin-left: -50px;
 }
 
 
