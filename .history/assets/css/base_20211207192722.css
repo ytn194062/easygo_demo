@@ -642,7 +642,7 @@ body.disabled-scroll {
     border-radius: var(--border-radius);
     color: var(--black-color);
     padding: 34px 60px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     box-shadow: rgb(0 0 0 / 15%) 0px 8px 32px;
     transition: 0.3s linear;
     display: none;

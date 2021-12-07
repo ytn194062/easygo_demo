@@ -517,7 +517,7 @@ body.disabled-scroll {
     width: 50px;
     height: 50px;
     border-radius: 12px;
-    overflow: visible;
+    overflow: hidden;
     margin-right: 20px;
 }
 
@@ -913,25 +913,6 @@ body.disabled-scroll {
 {
     display: none;
 } */
-.hide-on-mobile{
-    /* Becom a host */
-display: none;
-}
-.header__middle.hide-on-mobile{
-    overflow: visible;
-}
-.header,
-.header-top
-{
-    overflow: visible;
-}
-.header__right{
-    position: relative;
-    overflow: visible;
-}
-.header__content{
-    display: none;
-}
 
 .main-header{
     justify-content: space-around;

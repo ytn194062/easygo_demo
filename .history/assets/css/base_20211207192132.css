@@ -920,9 +920,7 @@ display: none;
 .header__middle.hide-on-mobile{
     overflow: visible;
 }
-.header,
-.header-top
-{
+.header{
     overflow: visible;
 }
 .header__right{
