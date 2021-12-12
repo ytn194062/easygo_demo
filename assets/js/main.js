@@ -332,7 +332,16 @@ for (const item of navbarModalItems) {
 }
 
 
-
-
-
+//---login--
+function on() {
+    document.querySelector(".nav__overlay").style.display = "block";
+  }
+  let loginModal = document.querySelector(".nav__overlay");
+  let loginClose = document.querySelector('.fa-times-circle');
+  loginClose.onclick = function() {
+    loginModal.style.display = "none";
+  }
+  function off() {
+ 
+  }
 // End header
