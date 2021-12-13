@@ -1325,7 +1325,7 @@ body.disabled-scroll {
     align-items: center;
 }
 
-.search-mobile-head-icon#search-mobile-head-icon  {
+.search-mobile-head-icon {
     --padding-left: 16px;
     font-size: 2rem;
     margin-right: 8px;

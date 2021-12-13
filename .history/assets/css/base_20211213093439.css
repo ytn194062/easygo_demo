@@ -901,7 +901,7 @@ body.disabled-scroll {
     display: none;
 }
 
-#m-header-mobile.header-mobile {
+.header-mobile {
     height: 80px;
     align-items: center;
     justify-content: center;
@@ -1325,7 +1325,7 @@ body.disabled-scroll {
     align-items: center;
 }
 
-.search-mobile-head-icon#search-mobile-head-icon  {
+.search-mobile-head-icon {
     --padding-left: 16px;
     font-size: 2rem;
     margin-right: 8px;
@@ -1384,61 +1384,17 @@ body.disabled-scroll {
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-.wide {
-        max-width: 740px;
-    }
 
-    .header__middle-normal {
-        position: absolute;
-        top: 90px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    .header__search {
-        top: calc(80px + 70px);
-        left: 0;
-        right: 0;
-        transform: translateX(0);
-        min-width: 100%;
-    }
-
-    .header__search-btn--full {
-        border-radius: 50%;
-    }
-    
-    .header__search-btn--full .header__search-btn-text {
-        display: none;
-    }
-
-    .take-room-sub__date {
-        justify-content: center;
-    }
-
-    .take-room-sub__date__navbar-btn--mobile {
-        display: block;
-    }
-
-    .take-room-sub__date__right {
-        display: none;
-    }
-    
-    .header-top.main-header--fixed {
-        --padding-bottom: 80px;
-    }
 }
 /* Mobile */
 @media only screen and (max-width:46.1875em) {
 
-.header__middle,
+/* .header__middle,
 .header__right-button,
 .hide-on-mobile
 {
     display: none;
-}
-/* --phuc */
+} */
 .wide {
         overflow: hidden;
         padding: 0 12px;
@@ -1450,9 +1406,6 @@ body.disabled-scroll {
     .main-header--fixed {
         display: none;
     }
-/* phuc */
-
-
 .hide-on-mobile{
     /* Becom a host */
 display: none;
@@ -1470,11 +1423,6 @@ display: none;
     position: relative;
     overflow: visible;
 }
-#m-header-mobile.header-mobile{
-    display: flex;
-    margin-top: 10px;
-    z-index: 9999;
-}
 /* .header__content{
     display: none;
 } */
@@ -1486,7 +1434,6 @@ display: none;
 .header__logo-link img{
     width:100px
 }
-
 
 }
 

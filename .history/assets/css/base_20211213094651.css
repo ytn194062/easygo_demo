@@ -1325,7 +1325,7 @@ body.disabled-scroll {
     align-items: center;
 }
 
-.search-mobile-head-icon#search-mobile-head-icon  {
+.search-mobile-head-icon {
     --padding-left: 16px;
     font-size: 2rem;
     margin-right: 8px;
@@ -1470,10 +1470,8 @@ display: none;
     position: relative;
     overflow: visible;
 }
-#m-header-mobile.header-mobile{
+.header-mobile{
     display: flex;
-    margin-top: 10px;
-    z-index: 9999;
 }
 /* .header__content{
     display: none;
