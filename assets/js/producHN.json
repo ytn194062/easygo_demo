@@ -1,0 +1,150 @@
+[{
+           
+    "name": "Hilton Hanoi Opera",
+    "image": "./assets/img/search_result/Hilton Hanoi Opera.jpg",
+    "rate":"(10)",
+    "price":"491,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "InterContinental Hanoi Westlake",
+    "image": "assets/img/search_result/InterContinental-Hanoi-Landmark72.jpg",
+    "rate":"(10)",
+    "price":"291,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "Lotte Hotel Hanoi",
+    "image": "./assets/img/search_result/Lotte-Hotel-Hanoi.jpg",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "Sofitel Metropole Hanoi Hotel  ",
+    "image": "./assets/img/search_result/Sofitel-Legend-Metropole-Hanoi-Hotel.jpg",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "Time Hotel ",
+    "image": "./assets/img/search_result/Time-Hotel.jpg",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"hotel",
+    "numberPeople":2
+},
+{
+   
+    "name": "JW Marriott Hotel Hanoi ",
+    "image": "./assets/img/search_result/JW-Marriott-Hotel-Hanoi.jpg",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "Langmandi Apartment ",
+    "image": "./assets/img/search_result/Langmandi Apartment.jpg ",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"apartment",
+    "numberPeople":5
+},
+{
+   
+    "name": "PentStudio West Lake Hanoi ",
+    "image": "./assets/img/search_result/PentStudio-West-Lake-Hanoi.jpg ",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "Roygent Parks Hanoi ",
+    "image": "./assets/img/search_result/Roygent-Parks-Hanoi.jpg ",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "InterContinental Hanoi Landmark72 ",
+    "image": "./assets/img/search_result/InterContinental-Hanoi-Landmark72.jpg ",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"apartment",
+    "numberPeople":4
+},
+{
+   
+    "name": "LotusHomestay Hanoi",
+    "image": "./assets/img/search_result/LotusHomestay Hanoi.jpg ",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"apartment",
+    "numberPeople":4
+},
+{
+   
+    "name": "Oakwood Residence Hanoi",
+    "image": "./assets/img/search_result/Oakwood-Residence-Hanoi.jpg ",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"Hotel",
+    "numberPeople":2
+},
+{
+   
+    "name": "Scent Premium Hotel",
+    "image": "./assets/img/search_result/Scent Premium Hotel.jpg",
+    "rate":"(10)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"motel",
+    "numberPeople":2
+},
+{
+   
+    "name": "Solaria Hanoi Hotel",
+    "image": "./assets/img/search_result/Solaria Hanoi Hotel.jpg",
+    "rate":"(9)",
+    "price":"351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"resort",
+    "numberPeople":2
+},
+{
+   
+    "name": "Somerset West Point Hanoi",
+    "image": "./assets/img/search_result/Somerset West Point Hanoi.jpg ",
+    "rate":"(9.5)",
+    "price":"1,351,520.47 VND",
+    "place":"Ha Noi",
+    "type":"apartment",
+    "numberPeople":3
+},]
