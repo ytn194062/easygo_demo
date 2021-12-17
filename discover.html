@@ -21,7 +21,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <link href="assets/css/base.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="./assets/css/search-result.css">
+    <!-- <link rel="stylesheet" href="./assets/css/search-result.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Volkhov&Nunito+Sans:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -401,7 +401,80 @@
         </div>
         
     </section>
- 
+    
+    <div class="filter">
+        <div class="container">
+            <form action="" method="get">
+                <div class="filter-title">More Filter</div>
+                <hr>
+                <div class="filter-section">
+                    <div class="filter-section__title">Activity type</div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="check1" value="food">
+                        <label class="form-check-label" for="check1">Food and drink</label>
+                    </div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check2" name="check2" value="art">
+                        <label class="form-check-label" for="check2">Art and culture</label>
+                    </div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check3" name="check3" value="trans">
+                        <label class="form-check-label" for="check3">Transportation activities</label>
+                    </div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check4" name="check4" value="nature">
+                        <label class="form-check-label" for="check4">Nature and out doors</label>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <hr>
+                <div class="filter-section" >
+                    <div class="filter-section__title">Price range</div>
+                    <div class="range-wrap">
+                        <output class="number"></output>
+                        <input type="range" class="range" name="people" max="20">
+                    </div>
+                </div>
+                <hr>
+                <div class="filter-section">
+                    <div class="filter-section__title">Giá / 1 đêm</div>
+                    <div class="filter-section__price">
+                        <span>200.000</span>
+                        <span>2.000.000</span>
+                    </div>
+                    <input type="range" class="form-range" id="customRange" step="10" name="points">
+                </div>
+                <hr>
+                <div class="filter-section">
+                    <div class="filter-section__title">Language offered</div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="check1" value="english">
+                        <label class="form-check-label" for="check1">English</label>
+                    </div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check2" name="check2" value="spain">
+                        <label class="form-check-label" for="check2">Spain</label>
+                    </div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check3" name="check3" value="vietnamese">
+                        <label class="form-check-label" for="check3">Vietnamese</label>
+                    </div>
+                    <div class="filter-section__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="check4" name="check4" value="german">
+                        <label class="form-check-label" for="check4">German</label>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="filter-section">
+                    <button class="filter-reset" type="reset">Clear all</button>
+                    <button class="filter-submit" type="submit">Show result</button>
+
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
 
     <!--  -->
        <footer>

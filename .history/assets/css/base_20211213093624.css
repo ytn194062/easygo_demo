@@ -901,7 +901,7 @@ body.disabled-scroll {
     display: none;
 }
 
-#m-header-mobile.header-mobile {
+.header-mobile {
     height: 80px;
     align-items: center;
     justify-content: center;
@@ -1325,7 +1325,7 @@ body.disabled-scroll {
     align-items: center;
 }
 
-.search-mobile-head-icon#search-mobile-head-icon  {
+.search-mobile-head-icon {
     --padding-left: 16px;
     font-size: 2rem;
     margin-right: 8px;
@@ -1384,50 +1384,7 @@ body.disabled-scroll {
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-.wide {
-        max-width: 740px;
-    }
 
-    .header__middle-normal {
-        position: absolute;
-        top: 90px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    .header__search {
-        top: calc(80px + 70px);
-        left: 0;
-        right: 0;
-        transform: translateX(0);
-        min-width: 100%;
-    }
-
-    .header__search-btn--full {
-        border-radius: 50%;
-    }
-    
-    .header__search-btn--full .header__search-btn-text {
-        display: none;
-    }
-
-    .take-room-sub__date {
-        justify-content: center;
-    }
-
-    .take-room-sub__date__navbar-btn--mobile {
-        display: block;
-    }
-
-    .take-room-sub__date__right {
-        display: none;
-    }
-    
-    .header-top.main-header--fixed {
-        --padding-bottom: 80px;
-    }
 }
 /* Mobile */
 @media only screen and (max-width:46.1875em) {
@@ -1438,8 +1395,7 @@ body.disabled-scroll {
 {
     display: none;
 }
-/* --phuc */
-.wide {
+/* .wide {
         overflow: hidden;
         padding: 0 12px;
     }
@@ -1449,8 +1405,8 @@ body.disabled-scroll {
 
     .main-header--fixed {
         display: none;
-    }
-/* phuc */
+    } */
+
 
 
 .hide-on-mobile{
@@ -1470,11 +1426,6 @@ display: none;
     position: relative;
     overflow: visible;
 }
-#m-header-mobile.header-mobile{
-    display: flex;
-    margin-top: 10px;
-    z-index: 9999;
-}
 /* .header__content{
     display: none;
 } */
@@ -1486,7 +1437,6 @@ display: none;
 .header__logo-link img{
     width:100px
 }
-
 
 }
 
@@ -2054,157 +2004,6 @@ display: none;
    
 }
 
-/* =================login=================== */
-:root{
-    --font-size12:12px;
-    --font-size15:15px;
-    --font-size20:20px;
-    --font-size25:25px;
-   
-}
-.index__login{
-    position: relative;
-}
-.index__login-sub{
-    width: 565px;
-    height:520px ;
-    background: #FFFFFF;
-    border-radius: 15px;
-    
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform:translateX(-50%);
-    color: #000;
-    z-index: 1000;
-}   
-.index__login-contain{
-
-
-}
-.wide-login{
-    width: 520px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.form__row{
-    display: flex;
-    margin-bottom: 10px;
-}
-.login__header{
-    padding-top: 15px;
-}
-.login-header__text{
-    text-align: center;
-    width: 80%;
-    font-size: var( --font-size20);
-}
-.fa-times-circle{ 
-    font-size: 25px;
-    color: rgb(94, 92, 92);
-}
-.fa-times-circle:hover,
-.fa-times-circle:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-.login-title{
-    font-weight: bold;
-    font-size: var(--font-size25);
-}
-.login__input,   .login__btn{
-    width: 100%;
-    height: 47px;
-    padding: 5px 15px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    font-size: 15px;
-}
-.login__input{
-    border: 2px solid rgba(0, 0, 0, 0.2);
-}
-.login__btn{
-   background-color: #6246E5;
-   color: #FFFFFF;
-   font-size: var(--font-size25);
-   margin: 10px 0;
-}.b{
-  display:inline-flex;
-}
-.hr-or{
-    width: 250px;
-}
-.login_text-small{
-    font-size: 10px;
-}
-.login_text-or{
-padding:0 5px;
-   transform:translateY(25%); 
-}
-.login_dif-item{
-    margin-bottom: 15px;
-}
-.login_dif-input{
-    width: 80%;
-    text-align: center;
-    background-color: #FFFFFF;
-    font-size: var(--font-size20);
-    
-}
-.fa-facebook,.fa-google{
-    width: 25px;
-height: 25px;
-font-weight: bold;
-font-size: 15px;
-text-align: center;
-padding-top: 7px;
-
-}
-.fa-facebook{
-    color: #FFFFFF;
-    background-color: #1877F2;
-
-}
-.fa-google{
-    color: rgb(175, 6, 6);
-}
-@media  (max-width:376px){
-    .index__login-sub{
-        width: 350px;
-        height:520px ;
-    }
-    .wide-login{
-        width: 305px;
-    }
-    :root{
- 
-    --font-size20:15px;
-    --font-size25:20px;
-    }
-    .hr-or{
-    width: 140px;
-    margin:5PX 0;
-    }
-    .login_text-or{
-  padding: 0;
-     transform:translateY(-20%); 
-    }
-  
-}
-.nav__overlay{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-   z-index: 10;
- 
-}
 
 
 
