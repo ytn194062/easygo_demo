@@ -83,7 +83,7 @@
                         <div class="discover__nav--item"><a href="">Nature and outdoors</a></div>
                     </div>
                     <div class="col self-display">
-                        <div class="discover__nav--item"><a href="">Filter</a></div>
+                        <div class="discover__nav--item"><a href="#" onclick="showFilter('.filter')">Filter</a></div>
                     </div>
                     
                     
@@ -403,8 +403,8 @@
     </section>
     
     <div class="filter">
-        <div class="container">
-            <form action="" method="get">
+        <form action="" method="get">
+            <div class="form-container">
                 <div class="filter-title">More Filter</div>
                 <hr>
                 <div class="filter-section">
@@ -448,31 +448,32 @@
                 <div class="filter-section">
                     <div class="filter-section__title">Language offered</div>
                     <div class="filter-section__checkbox form-check">
-                        <input class="form-check-input" type="checkbox" id="check1" name="check1" value="english">
-                        <label class="form-check-label" for="check1">English</label>
+                        <input class="form-check-input" type="checkbox" id="lang1" name="lang1" value="english">
+                        <label class="form-check-label" for="lang1">English</label>
                     </div>
                     <div class="filter-section__checkbox form-check">
-                        <input class="form-check-input" type="checkbox" id="check2" name="check2" value="spain">
-                        <label class="form-check-label" for="check2">Spain</label>
+                        <input class="form-check-input" type="checkbox" id="lang2" name="lang2" value="spain">
+                        <label class="form-check-label" for="lang2">Spain</label>
                     </div>
                     <div class="filter-section__checkbox form-check">
-                        <input class="form-check-input" type="checkbox" id="check3" name="check3" value="vietnamese">
-                        <label class="form-check-label" for="check3">Vietnamese</label>
+                        <input class="form-check-input" type="checkbox" id="lang3" name="lang3" value="vietnamese">
+                        <label class="form-check-label" for="lang3">Vietnamese</label>
                     </div>
                     <div class="filter-section__checkbox form-check">
-                        <input class="form-check-input" type="checkbox" id="check4" name="check4" value="german">
-                        <label class="form-check-label" for="check4">German</label>
+                        <input class="form-check-input" type="checkbox" id="lang4" name="lang4" value="german">
+                        <label class="form-check-label" for="lang4">German</label>
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="filter-section">
+                <div class="filter-section filter-button">
                     <button class="filter-reset" type="reset">Clear all</button>
-                    <button class="filter-submit" type="submit">Show result</button>
-
+                    <button class="filter-submit" type="submit" onclick="hideFilter('.filter')">Show result</button>
+    
                 </div>
-            </form>
+            </div>
             
-        </div>
+        </form>
+            
         
     </div>
 
@@ -563,6 +564,7 @@
        </footer>
 
 
+<script src="./assets/js/sr_filter.js"></script>
 
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -596,7 +598,7 @@
     }
     })
 </script>
-
+    
     
 </body>
 </html>

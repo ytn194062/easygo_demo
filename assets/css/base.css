@@ -1384,7 +1384,7 @@ body.disabled-scroll {
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-.wide {
+.header .wide {
         max-width: 740px;
     }
 
@@ -2078,10 +2078,6 @@ display: none;
     color: #000;
     z-index: 1000;
 }   
-.index__login-contain{
-
-
-}
 .wide-login{
     width: 520px;
     max-width: 100%;
@@ -2202,7 +2198,7 @@ padding-top: 7px;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     display: none;
-   z-index: 10;
+    z-index: 10;
  
 }
 
@@ -2303,7 +2299,7 @@ padding-top: 7px;
          flex-wrap: nowrap;
     }
     .footer__logo{
-        width: 40%;
+        width: 30%;
     }
     .footer  .footer__ul >li >h3 {
         font-size: 14px;
