@@ -355,14 +355,11 @@ const searchCloseMobile = document.querySelector('.search-mobile-head-icon');
 headerSearchMobile.onclick = function () {
     searchMobile.classList.add('display');
     document.querySelector('body').classList.add('disabled-scroll'); 
-    // headerSearchMobile.style.display = 'none';
 }
 
 searchCloseMobile.onclick = function () {
     searchMobile.classList.remove('display');
     document.querySelector('body').classList.remove('disabled-scroll'); 
-    // headerSearchMobile.style.display = "flex";
-
 }
 
 

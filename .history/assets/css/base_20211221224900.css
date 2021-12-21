@@ -1664,14 +1664,15 @@ display: none;
     justify-content: center;
     align-items: center;
 }
-/* .search-mobile-head-icon{
+.search-mobile-head-icon{
+  
     padding-left: 16px;
     font-size: 2rem;
     margin-right: 8px;
     padding: 16px;
     margin-left: calc(-1 * 16px);
 
-} */
+}
 .navbar-mobile-item-icon i {
     font-size: 2.4rem;
     color: #CCC;

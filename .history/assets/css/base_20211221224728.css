@@ -1664,14 +1664,14 @@ display: none;
     justify-content: center;
     align-items: center;
 }
-/* .search-mobile-head-icon{
-    padding-left: 16px;
+.search-mobile-head-icon{
+    --padding-left: 16px;
     font-size: 2rem;
     margin-right: 8px;
     padding: 16px;
-    margin-left: calc(-1 * 16px);
+    margin-left: calc(-1 * var(--padding-left));
 
-} */
+}
 .navbar-mobile-item-icon i {
     font-size: 2.4rem;
     color: #CCC;
@@ -2083,7 +2083,10 @@ display: none;
     color: #000;
     z-index: 1000;
 }   
+.index__login-contain{
 
+
+}
 .wide-login{
     width: 520px;
     max-width: 100%;
