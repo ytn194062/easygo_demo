@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 // let app = angular.module("AngularApp",[]);
 // app.controller("ProductController",function($scope,$http){
 //     $http(
@@ -17,7 +14,6 @@
 //         }
 //     )
 // })
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
 
 // Header
 

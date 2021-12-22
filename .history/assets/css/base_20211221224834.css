@@ -1384,7 +1384,7 @@ body.disabled-scroll {
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-.header .wide {
+.wide {
         max-width: 740px;
     }
 
@@ -1473,7 +1473,7 @@ display: none;
 #m-header-mobile.header-mobile{
     display: flex;
     margin-top: 10px;
-    /* z-index: 9999; */
+    z-index: 9999;
 }
 /* .header__content{
     display: none;
@@ -1664,14 +1664,15 @@ display: none;
     justify-content: center;
     align-items: center;
 }
-/* .search-mobile-head-icon{
+.search-mobile-head-icon{
+  
     padding-left: 16px;
     font-size: 2rem;
     margin-right: 8px;
     padding: 16px;
     margin-left: calc(-1 * 16px);
 
-} */
+}
 .navbar-mobile-item-icon i {
     font-size: 2.4rem;
     color: #CCC;
@@ -2070,60 +2071,23 @@ display: none;
 .index__login{
     position: relative;
 }
-.nav__overlay{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-   z-index: 10;
-   -webkit-animation-name: fadeIn; /* Fade in the background */
-   -webkit-animation-duration: 0.4s;
-   animation-name: fadeIn;
-   animation-duration: 0.4s
-}
-
 .index__login-sub{
     width: 565px;
     height:520px ;
     background: #FFFFFF;
     border-radius: 15px;
     
-    position: relative;
+    position: absolute;
     top: 10%;
-    margin: auto;
+    left: 50%;
+    transform:translateX(-50%);
     color: #000;
     z-index: 1000;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatelogin   ;
-    animation-duration: 0.5s;
 }   
-<<<<<<< HEAD
-=======
-@-webkit-keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
-  }
+.index__login-contain{
 
-  @-webkit-keyframes animatelogin {
-    from {transform:scale(0.5);}
-    to {transform:scale(1)};
-  }
-  @keyframes animatelogin {
-    from {transform:scale(0.5);}
-    to {transform:scale(1)};
-  }
 
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
+}
 .wide-login{
     width: 520px;
     max-width: 100%;
@@ -2234,7 +2198,6 @@ padding-top: 7px;
     }
   
 }
-<<<<<<< HEAD
 .nav__overlay{
     position: fixed;
     width: 100%;
@@ -2245,11 +2208,9 @@ padding-top: 7px;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     display: none;
-    z-index: 10;
+   z-index: 10;
  
 }
-=======
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
 
 
 
@@ -2348,7 +2309,7 @@ padding-top: 7px;
          flex-wrap: nowrap;
     }
     .footer__logo{
-        width: 30%;
+        width: 40%;
     }
     .footer  .footer__ul >li >h3 {
         font-size: 14px;

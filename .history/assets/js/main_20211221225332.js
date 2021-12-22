@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 // let app = angular.module("AngularApp",[]);
 // app.controller("ProductController",function($scope,$http){
 //     $http(
@@ -17,7 +14,6 @@
 //         }
 //     )
 // })
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
 
 // Header
 
@@ -359,6 +355,7 @@ const searchCloseMobile = document.querySelector('.search-mobile-head-icon');
 headerSearchMobile.onclick = function () {
     searchMobile.classList.add('display');
     document.querySelector('body').classList.add('disabled-scroll'); 
+    headerSearchMobile.style.display = 'none';
 }
 
 searchCloseMobile.onclick = function () {
@@ -381,5 +378,19 @@ function on() {
   }
   
 
-  
+
 // End header
+let app = angular.module("AngularApp", []);
+app.controller("ProductController", function ($scope, $http) {
+  $http({
+    method: "GET",
+    url: "/assets/js/product.json",
+  }).then(
+    function success(response) {
+      $scope.products = response.data;
+    },
+    function error(response) {
+      $scope.error = response.statusText;
+    }
+  );
+});
