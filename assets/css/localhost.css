@@ -36,9 +36,7 @@
     color: var(--black-color);
     font-size: 28px;
 }
-/* .section-1-quote div{
-    display: inline-block;
-} */
+
 .prev, .next {
     cursor: pointer;
     width: auto;

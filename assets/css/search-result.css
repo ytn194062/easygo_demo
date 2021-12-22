@@ -34,9 +34,6 @@
     width: 300px;
     margin: 0 auto;
 }
-.filter-section{
-    margin-bottom: 10px;
-}
 .filter-title{
     font-weight: bold;
     text-align: center;
@@ -62,6 +59,9 @@
 .filter-section__checkbox{
     float: left; 
     margin-left: 20px;
+}
+.filter hr{
+    margin: 10px auto;
 }
 .range-wrap{
     position: relative;
@@ -145,12 +145,15 @@
     margin-bottom: 30px;
 }
 .page-number-list{
-    display: flex;
     font-weight: bold;
     font-size: 18px;
+}
+dir-pagination-controls ul{
     justify-content: center;
 }
-.page-number-list a{
-    margin-right: 25px;
+dir-pagination-controls li{
+    padding: 10px;
 }
-
+dir-pagination-controls li:hover{
+    text-decoration: underline;
+}

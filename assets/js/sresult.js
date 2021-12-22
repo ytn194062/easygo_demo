@@ -26,3 +26,13 @@ function showFilter(name){
 function hideFilter(name){ 
   document.querySelector(`${name}`).style.display = "none";
 }
+
+// ================================
+
+function topScroll(){
+  window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth' 
+ });
+}
