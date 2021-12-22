@@ -112,38 +112,6 @@
         font-size: 16px;
         
     }
-    .manual-btn {
-        background-color: #E5E5E5;
-        padding: 5px;
-        height: 15px;
-        width: 15px;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: background-color 0.6s ease;
-    }
-    .manual-btn:hover {
-        background-color: #39425D;
-    }
-    .manual-btn:not(:last-child) {
-        margin-right: 15px;
-    }
-    
-    #radio1:checked~.slider .slides .slide-1,
-    #radio2:checked~.slider .slides .slide-2,
-    #radio3:checked~.slider .slides .slide-3,
-    #radio4:checked~.slider .slides .slide-4,
-    #radio5:checked~.slider .slides .slide-5 {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    
-    #radio1:checked~.page-number-list label[for="radio1"],
-    #radio2:checked~.page-number-list label[for="radio2"],
-    #radio3:checked~.page-number-list label[for="radio3"],
-    #radio4:checked~.page-number-list label[for="radio4"],
-    #radio5:checked~.page-number-list label[for="radio5"] {
-        background-color: #39425D;
-    }
     /* ====== DISCOVER ====== */
     .form-container{
         width: 100%;
@@ -162,6 +130,11 @@
     }
     .local-host-header{
         margin-bottom: 0px;
+    }
+    .local-host-header .main-header{
+        margin: 0 auto;
+        display: flex!important;
+        justify-content: space-between;
     }
     .local-host-header .header__logo-link img{
         width: 120px;
@@ -231,6 +204,8 @@
     .section-3-content{
         position: absolute;
         top: 30px;
+        left: 0;
+        right: 0;
         z-index: 2;
         margin-top: 0px;
     }
