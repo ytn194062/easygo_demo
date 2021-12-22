@@ -21,23 +21,65 @@
             <div class="header--logo">
                 <a href="./index.html"><img src="./assets/img/EASYGO_logo.png" alt="" ></a>
             </div>
-            <div class="header--menu  hide-on-mobile">
+            <div class="header--menu  hide-booking-mobile">
                 <ul class="header--menu__ul ">
-                   <li><a href="#">Photos</a> </li> 
-                   <li> <a href="#">Amenities</a></li> 
-                    <li><a href="#">Review</a> </li> 
-                    <li><a href="#">Location</a></li> 
+                   <li><a href="#Photos">Photos</a> </li> 
+                   <li> <a href="#Amenities">Amenities</a></li> 
+                   <li><a href="#Location">Location</a></li>
+                    <li><a href="#Review">Review</a> </li> 
+                   
                  
                 </ul> 
             </div>
-            <div >   <i class="fa fa-user-o " ></i></div>
-            
+            <div >   <i class="fa fa-user-o  index__login" onclick="on()"></i></div>
+            <div class="nav__overlay"onclick="off()" id="nav__overlay" >
+                <div class="index__login-sub ">
+                    <div class="wide-login">
+                        <div class="login_form">
+                            <div class="login__header form__row">
+                                <div><i class="far fa-times-circle"></i></div>
+                                <div class="login-header__text">Log in or Sign up</div>
+                            </div>
+                            <hr>
+                            <div class="login-title form__row" >Welcome to EasyGo</div>
+                            <div class="form__row">
+                                <input class="login__input" type="text" placeholder="Full name">
+                            </div>
+                            <div class="form__row">
+                                <input class="login__input" type="text" placeholder="Phone number">
+                            </div>
+                            <p class=" login_text-small">We'll call or text you to confirm your number</p>
+                            <button  class="login__btn  " > Continue</button>
+                        
+                        </div>
+                        <div class="form__row b">
+                            <hr class="hr-or">
+                            <span class="login_text-or">Or</span>
+                            <hr class="hr-or">
+                        </div>
+                        <div class="login_dif">
+                            <div class="login_dif-item login__input">
+                                <a href="#">
+                                    <i class="fa fa-facebook" ></i> 
+                                    <input class="login_dif-input"  type="button" value="Continue with Facebook">
+                                </a>
+                            </div>
+                            <div class="login_dif-item login__input">
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                    <input class="login_dif-input" type="button" value="Continue with Google">
+                                </a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
         </div>
          <hr>
          <a href=""><p class="header--text">Hanoi,VietNam > Art and Culture > Art > Photography</p>   </a>
     </header>
     <!-- section1 -->
-    <div class="booking--section1 wide "> 
+    <div class="booking--section1 wide "id="Photos"> 
         <p class="text-title">Your personal Photographer in Hotel</p>
         <div class="hotel-quality flex" >
             <div class="hotel-start"> 
@@ -48,11 +90,11 @@
                 <i class="fa fa-heart-o"></i>
             </div>
         </div>
-        <div class="hotel-img flex">
+        <div class="hotel-img flex" >
             <div class="hotel-img__item">
                 <img src="./assets/img/booking_site/khachSan1.jpg" alt="">
             </div>
-            <div class="hotel-img__item hide-on-mobile">
+            <div class="hotel-img__item   hide-on-tablet">
                 <img src="./assets/img/booking_site/khachSan3.jpg" alt="">
             </div>
             <div class="hotel-img__item img3 flexcol">
@@ -63,7 +105,7 @@
                     <img src="./assets/img/booking_site/khachSan10.jpg" alt="">
                 </div>
             </div>
-            <div class="hotel-img__item hide-on-mobile">
+            <div class="hotel-img__item   hide-on-tablet">
                 <img src="./assets/img/booking_site/khachSan9.jpg" alt="">
             </div>
             
@@ -74,14 +116,14 @@
     </div>
     <!-- section2 -->
     <div class="booking--section2 wide ">
-        <div class="booking-review ">
+        <div class="booking-review " id="Amenities">
             <div>
                 <input type="radio" name="radio-feedback" id="radio-fb1" checked>
                 <input type="radio" name="radio-feedback" id="radio-fb2">
                 <input type="radio" name="radio-feedback" id="radio-fb3">
                 <input type="radio" name="radio-feedback" id="radio-fb4">
             
-                <div class="booking__feedback  ">
+                <div class="booking__feedback  "id="Review">
                   
                     <div class="feedback--content feedback--content1">
                         <div class="feedback__text">
@@ -147,34 +189,68 @@
                     Show all price
                 </p>
             </div>
-            <div class="filter-find booking--border hide-on-mobile ">
-                <div class="place-text "><input type="text" value=" Hà" ></div>
+            <div class="filter-find booking--border hide-booking-mobile ">
+                <div class="place-text "><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search place" title="Type in a name"></div>
                 <div class="add-date filter__search-item">
                     <input id="add-date" type="text" placeholder="Add date">
                     
                 </div>
                 <div><span class="glyphicon glyphicon-search"></span></div>
             </div>
-            <div class=" hide-on-mobile filter-place booking--border">
-                    <div class="filter-place">
-                        <p><span class="glyphicon glyphicon-map-marker"></span> Hà Nội, Việt Nam </p>
-                    </div>
-                    <div class="filter-place">
-                        <p><span class="glyphicon glyphicon-map-marker"></span> Hà Giang, Việt Nam </p>
-                    </div>
-                    <div class="filter-place">
-                        <p><span class="glyphicon glyphicon-map-marker"></span> Hà Nam, Việt Nam </p>
+            <div class=" hide-booking-mobile filter-places booking--border"ng-repeat="p in tinhThanhs| filter:keyword ">
+                    <!-- <div class="filter-place">
+                        <p><span class="glyphicon glyphicon-map-marker"></span> {{p.name}} </p><br>
+                    </div> -->
+                    <div id="filter-place">
+                        <p><span class="glyphicon glyphicon-map-marker">Cà Mau, Việt Nam</span>  </p>
+                 
+                        <p><span class="glyphicon glyphicon-map-marker">Hồ Chí Minh</span>  </p>
+                    
+                        <p><span class="glyphicon glyphicon-map-marker">Sa Pa, Lào Cai </span> </p>
+                        <p><span class="glyphicon glyphicon-map-marker">Hải phòng</span> </p>
+                        <p><span class="glyphicon glyphicon-map-marker">Bà Rịa Vũng Tàu </span> </p>
+                        <p><span class="glyphicon glyphicon-map-marker">Hà Nội </span> </p>
+                        <p><span class="glyphicon glyphicon-map-marker">Đà Lạt</span>  </p>
                     </div>
                 
             </div>
             <div class="btn--hover ">
-                <button class=" filter__btn booking--border ">Buy</button>
+                <button class=" filter__btn booking--border  booking__billing " onclick="billingOn()">Buy</button>
+            </div>
+            <div class="billing__overlay"  id="billing__overlay">
+                <div class="booking_billing-sub ">
+                    <div class="wide-billing">
+                        <div class="billing_row"><p class="billing_header" style="color:#6246E5;">Review your booking</p>
+                            <div><i class="far fa-times-circle billingClose"></i></div></div>
+                        
+                        <div class="billing_row">
+                            <div><h3 class="billing_title" >Vinpeal Hotel Ha noi</h3>
+                                <p>209 Hai Ba Trung street HaNoi</p>
+                                <p>Mon,22/12/2021-Fri,28/12/2021</p></div>
+                            <div class="billing_img">
+                                <img src="./assets/img/booking_site/khachSan10.jpg" alt="">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="billing_row">
+                            <p>Payment method</p>
+                            <p style="color: blue;">Add</p>
+                        </div>
+                        
+                        <hr>
+                        <div class="billing_row text-color"style="color: blue;">Add coupon</div>
+                        <div class="billing_row "><h3 class="billing_title">Total(VND):</h3>
+                        <h3 class="billing_title">1,344.00</h3></div>
+                        <div class="billing_row"><button class="billing__btn">Confirm Booking</button></div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 
     <!-- section3 -->
-    <div class="booking--section3 wide">
+    <div class="booking--section3 wide"id="Location">
         <p class="text-title">Similar hotel</p>
         <div class="similar-hotel"><!--slider-->
                 <input type="radio" name="similar-radio" id="similar-radio1" checked>
@@ -377,7 +453,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer__media hide-on-mobile">
+            <div class="footer__media hide-booking-mobile">
                <div class="footer__media--socialIcon">
                     <a href="#">
                         <i class="fa fa-facebook" ></i> 
@@ -408,5 +484,57 @@
             <p>All rights Reserved @easygo.com</p>
         </div>
     </footer>
+    <script>
+   
+      function billingOn(){
+      document.querySelector(".billing__overlay").style.display = "block";
+      }
+      let billingModal = document.querySelector(".billing__overlay");
+      let billingClose = document.querySelector('.billingClose');
+      billingClose.onclick = function() {
+        billingModal.style.display = "none";
+      }
+    //   function off() {
+    //     document.querySelector(".nav__overlay").style.display = "none";
+    //   }
+    var modal = document.getElementById("billing__overlay");
+
+
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+    function on() {
+        document.querySelector(".nav__overlay").style.display = "block";
+      }
+      let loginModal = document.querySelector(".nav__overlay");
+      let loginClose = document.querySelector('.fa-times-circle');
+      loginClose.onclick = function() {
+        loginModal.style.display = "none";
+      }
+    var LoginModal = document.getElementById("nav__overlay");
+  window.onclick = function(event) {
+  if (event.target == LoginModal) {
+    LoginModal.style.display = "none";
+  }
+  }
+  function myFunction() {
+    var input, filter, places, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    places = document.getElementById("filter-place");
+    span = places.getElementsByTagName("p");
+    for (i = 0; i < span.length; i++) {
+        a = span[i].getElementsByTagName("span")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            span[i].style.display = "";
+        } else {
+            span[i].style.display = "none";
+        }
+    }
+}
+    </script>
 </body>
 </html>
