@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-
-=======
-// let app = angular.module("AngularApp",[]);
-// app.controller("ProductController",function($scope,$http){
-//     $http(
-//         {
-//             method:"GET",
-//             url:"/assets/js/product.json"
-//         }
-//     ).then(
-//         function success(response){
-//             $scope.products=response.data;
-//         },
-//         function error(response){
-//             $scope.error = response.statusText;
-//         }
-//     )
-// })
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
 
 // Header
 
@@ -311,10 +291,6 @@ function notTarget(e) {
     if (userSub.classList.contains('display') && (!userSub.contains(e.target)) && (!user.contains(e.target))) {
         userSub.classList.remove('display');
     }
-
-    /**------------------Modal Language - currency--------------- */
-    
-    
 }
 
 document.onclick = notTarget;

@@ -601,7 +601,7 @@
 
 .discover__logo--img {
     max-height: 30px;
-    width: 20%;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -741,11 +741,11 @@ color:rgb(136, 136, 211);
 :root{
     --filter-radius: 20px;
 }
-.filter{
+.discover-filter{
     width: 100%;
     padding-top: 75px;
     position: fixed;
-    /* z-index: 2; */
+    z-index: 2;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -769,6 +769,10 @@ color:rgb(136, 136, 211);
 .filter-section{
     font-size: 15px;
 }
+.filter-section:not(:last-child){
+    margin-bottom: 15px;
+
+}
 .filter-section__title{
     font-size: 22px;
 }
@@ -781,7 +785,6 @@ color:rgb(136, 136, 211);
 }
 .range-wrap{
     position: relative;
-    padding-bottom: 20px;
 }
 .range{
     width: 100%;
@@ -885,7 +888,7 @@ color:rgb(136, 136, 211);
      /* .discover__introduce--img #display-n{
          display: none;
      } */
-
+     
 
 
 } 

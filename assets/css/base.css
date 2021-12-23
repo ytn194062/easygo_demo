@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
+
 }
 
 :root{
@@ -119,9 +121,6 @@ body.disabled-scroll {
 .header, .section-item:not(:last-child){
     margin-bottom: var(--item-Spacing);
 }
-/* .section-item a{
-    color: var(--text-color) !important;
-} */
 .section-item__heading{
     color: var(--third-color);
     font-weight: bold;
@@ -561,7 +560,9 @@ body.disabled-scroll {
     position: absolute;
     right: 16px;
 }
-
+.header__search-btn a{
+    color: white!important;
+}
 .header__search-btn--full {
     border-radius: 30px;
 }
@@ -2079,7 +2080,7 @@ display: none;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
-    display: none;
+    display: block;
    z-index: 10;
    -webkit-animation-name: fadeIn; /* Fade in the background */
    -webkit-animation-duration: 0.4s;
@@ -2102,8 +2103,6 @@ display: none;
     animation-name: animatelogin   ;
     animation-duration: 0.5s;
 }   
-<<<<<<< HEAD
-=======
 @-webkit-keyframes fadeIn {
     from {opacity: 0} 
     to {opacity: 1}
@@ -2123,7 +2122,6 @@ display: none;
     to {transform:scale(1)};
   }
 
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
 .wide-login{
     width: 520px;
     max-width: 100%;
@@ -2234,7 +2232,6 @@ padding-top: 7px;
     }
   
 }
-<<<<<<< HEAD
 .nav__overlay{
     position: fixed;
     width: 100%;
@@ -2248,8 +2245,6 @@ padding-top: 7px;
     z-index: 10;
  
 }
-=======
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
 
 
 
