@@ -735,6 +735,12 @@ color:rgb(136, 136, 211);
 .discover__introduce--img h3 {
     margin: 5px 25px 15px;
 }
+
+
+/*========= FILTER ========== */
+:root{
+    --filter-radius: 20px;
+}
 .filter{
     width: 100%;
     padding-top: 75px;
@@ -744,17 +750,69 @@ color:rgb(136, 136, 211);
     right: 0px;
     bottom: 0px;
     left: 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    display: none;
 }
-.filter .container{
+.form-container{
     background-color: white;
-    border-radius: 20px;
-    width: 400px;
+    border-radius: var(--filter-radius);
+    width: 500px;
+    padding: 10px 20px 0px 20px;
     margin: 0 auto;
 }
-
-
+.filter-title{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+.filter-section{
+    font-size: 15px;
+}
+.filter-section__title{
+    font-size: 22px;
+}
+.filter-section__price span:last-child{
+    float: right;
+}
+.filter-section__checkbox{
+    float: left;
+    width: 200px;
+}
+.range-wrap{
+    position: relative;
+    padding-bottom: 20px;
+}
+.range{
+    width: 100%;
+}
+.number{
+    position: relative;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.filter-button{
+    margin-left: -20px;
+    padding: 10px 20px;
+    border-bottom-right-radius: var(--filter-radius);
+    border-bottom-left-radius: var(--filter-radius);
+    background-color: #747DEF;
+    font-weight: bold;
+    width: 500px;
+}
+.filter-button button:hover{
+    color: white;
+}
+.filter-reset{
+    text-decoration: underline;
+}
+.filter-submit{
+    float: right;
+}
+.filter-button button{
+    background: none;
+}
 
 
 

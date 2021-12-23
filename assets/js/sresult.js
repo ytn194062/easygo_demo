@@ -19,7 +19,20 @@ function setNumber(range, number) {
   number.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px`;
 }
 
-function showFilter(){ 
-  var filter = document.getElementsByClassName("filter");
-  filter.style.display = "block";
+function showFilter(name){ 
+  document.querySelector(`${name}`).style.display = "block";
+
+}
+function hideFilter(name){ 
+  document.querySelector(`${name}`).style.display = "none";
+}
+
+// ================================
+
+function topScroll(){
+  window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth' 
+ });
 }
