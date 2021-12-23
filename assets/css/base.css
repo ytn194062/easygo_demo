@@ -2102,8 +2102,6 @@ display: none;
     animation-name: animatelogin   ;
     animation-duration: 0.5s;
 }   
-<<<<<<< HEAD
-=======
 @-webkit-keyframes fadeIn {
     from {opacity: 0} 
     to {opacity: 1}
