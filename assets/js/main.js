@@ -1,29 +1,4 @@
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-// let app = angular.module("AngularApp",[]);
-// app.controller("ProductController",function($scope,$http){
-//     $http(
-//         {
-//             method:"GET",
-//             url:"/assets/js/product.json"
-//         }
-//     ).then(
-//         function success(response){
-//             $scope.products=response.data;
-//         },
-//         function error(response){
-//             $scope.error = response.statusText;
-//         }
-//     )
-// })
->>>>>>> a8870333d95768fc14dba73892dddaff6b5cf943
->>>>>>> 3ef97205f1b32d2f26cfb3effeff88bfed84859c
-
-// Header
 
 const tab1 = document.getElementById('tab1');
 const tab2 = document.getElementById('tab2');
