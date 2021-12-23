@@ -50,7 +50,7 @@
                         </a>
                     </div>
 
-                    <div class="header__middle">
+                    <div class="header__middle hide-on-mobile">
                         <div class="header__middle-normal">
                             <input type="radio" hidden checked id="tab1" name="selection">
                             <label for="tab1"
@@ -74,15 +74,17 @@
                     </div>
 
                     <div class="header__right">
-                        <a href="localhost.html" class="header__right-item header__right-link">Becomes Host</a>
-                        <button class="header__right-item header__right-button">
-                            <i class="header__right-icon fas fa-globe"></i>
-                        </button>
+                        <div class="hide-on-mobile"><a href="#tryhost"
+                                class=" header__right-item header__right-link  ">Becomes Host</a>
+                            <button class="header__right-item header__right-button ">
+                                <i class="header__right-icon fas fa-globe"></i>
+                            </button>
+                        </div>
 
 
                         <div class="header__right-item header__right-user">
-                            <i class="header__right-menu-icon fas fa-bars"></i>
-                            <i class="header__right-user-icon fas fa-user-circle"></i>
+                            <i class="header__right-menu-icon fas fa-bars hide-on-mobile"></i>
+                            <i class="header__right-user-icon fas fa-user-circle hide-on-mobile"></i>
                         </div>
 
 
@@ -150,14 +152,14 @@
                         <label for="header__search-place" class="header__search-place header__search-item">
                             <div>
                                 <h6 class="header__search-item-title">Location</h6>
-                                <input type="text" id="header__search-place" class="header__search-item-input"
+                                <input type="text" id="header__search-place" class="header__search-item-input hide-on-mobile"
                                     placeholder="Where do you want to go?">
                             </div>
                         </label>
 
                         <div class="header__search-take-room header__search-item">
                             <h6 class="header__search-item-title">Date</h6>
-                            <span class="header__search-item-content">Choose Date</span>
+                            <span class="header__search-item-content hide-on-mobile">Choose Date</span>
                             <span class="header__search-item-day"></span>
                         </div>
 
@@ -170,7 +172,7 @@
                         <div class="header__search-customer header__search-item">
                             <div class="header__search-customer-left">
                                 <h6 class="header__search-item-title">People</h6>
-                                <span class="header__search-item-content">Add People</span>
+                                <span class="header__search-item-content hide-on-mobile">Add People</span>
                             </div>
                         </div>
 
@@ -197,7 +199,7 @@
                                 </div>
                             </div>
 
-                            <div class="header__search-place-sub-tab2">
+                            <!-- <div class="header__search-place-sub-tab2">
                                 <ul class="header__search-place-sub-list-place">
                                     <li class="header__search-place-sub-place-item">
                                         <div class="header__search-place-sub-place-item-img">
@@ -219,7 +221,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="header__search-take-room-sub">
@@ -510,6 +512,21 @@
                 </div>
             </div>
         </div>
+        <div class="header__content hide-on-mobile">
+            <h5 class="header__content__text">Welcome to visit my homepage</h5>
+            <a href="#explore" class="header__content__btn">Visit something?</a>
+        </div>
+
+
+
+        <div class="header-mobile" id="m-header-mobile">
+            <div class="header-mobile-btn">
+                <div class="header-mobile-btn-content">
+                    <i class="fas fa-search"></i>
+                    Bạn sắp đi đâu?
+                </div>
+            </div>
+        </div>
 
     </header>
 
@@ -725,6 +742,50 @@
             <p>All rights Reserved @easygo.com</p>
         </div>
     </footer>
+    <div class="search-mobile">
+        <div class="search-mobile-head">
+            <i class="search-mobile-head-icon fa fa-angle-left"></i>
+            <input class="search-mobile-head-input" type="text" placeholder="Bạn sắp đi đâu?">
+        </div>
+
+        <div class="search-mobile-body">
+            <div class="header__search-place-sub-tab1">
+                <h6 class="header__search-place-sub-title">Mọi lúc, mọi nơi</h6>
+                <div class="header__search-place-sub-search">
+                    <span class="header__search-place-sub-search__text">Tìm kiếm linh hoạt</span>
+                    <i>
+                        <video class="header__search-place-sub-search__icon" autoplay preload="auto">
+                            <source src="assets/img/video.mp4" type="video/mp4">
+                        </video>
+                    </i>
+                </div>
+            </div>
+
+            <div class="header__search-place-sub-tab2">
+                <ul class="header__search-place-sub-list-place">
+                    <li class="header__search-place-sub-place-item">
+                        <div class="header__search-place-sub-place-item-img">
+                            <img src="./assets/img/map.png" alt="Img">
+                        </div>
+
+                        <div class="header__search-place-sub-place-item-name">
+                            <span>Lân cận</span>
+                        </div>
+                    </li>
+
+                    <li class="header__search-place-sub-place-item">
+                        <div class="header__search-place-sub-place-item-img">
+                            <img src="./assets/img/map.png" alt="Img">
+                        </div>
+
+                        <div class="header__search-place-sub-place-item-name">
+                            <span>Lân cận</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/sresult.js"></script>
     <script>
