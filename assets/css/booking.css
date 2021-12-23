@@ -237,16 +237,16 @@ hr{
     position: absolute;
 } 
 #add-date {
-    width: 70%;
+    width: 80%;
 }
 .add-date{
-    width: 35%;
+    width: 55%;
     text-align: center;
     
 }
 .place-text{
    margin-left: 5px;
-    width: 50%;
+    width: 35%;
     font-weight: bold;
     font-size: 20px;
 }
@@ -272,6 +272,10 @@ hr{
 }
 .glyphicon-search{
     padding: 5px;
+}
+.glyphicon-search:hover{
+    cursor:auto;
+    color: #6246E5;
 }
 /* section3 */
 .section3{
@@ -462,7 +466,7 @@ display: none;
 
 
 
-@media (max-width: 739px) {
+/* @media (max-width: 739px) {
     .hide-on-tablet{
         display: none;
     }
@@ -509,7 +513,7 @@ margin-left: 15px;
    .footer__logo{
        width: 70%;
    }
-}
+} */
 /* responsive */
 @media  (max-width:376px)
 { .hide-booking-mobile{

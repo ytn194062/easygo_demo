@@ -34,8 +34,8 @@
             <div >   <i class="fa fa-user-o  index__login" onclick="on()"></i></div>
             <div class="nav__overlay"onclick="off()" id="nav__overlay" >
                 <div class="index__login-sub ">
-                    <div class="wide-login">
-                        <div class="login_form">
+                    <FORM class="wide-login"action="server.html" method="get">
+                        <div class="login_form" >
                             <div class="login__header form__row">
                                 <div><i class="far fa-times-circle"></i></div>
                                 <div class="login-header__text">Log in or Sign up</div>
@@ -71,7 +71,7 @@
                                 </a>
                             </div>
                          </div>
-                    </div>
+                    </FORM>>
                 </div>
             </div>
         </div>
@@ -190,9 +190,9 @@
                 </p>
             </div>
             <div class="filter-find booking--border hide-booking-mobile ">
-                <div class="place-text "><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search place" title="Type in a name"></div>
+                <div class="place-text "><input type="text" id="myInput" onkeyup="myFunction()" placeholder=" Place" title="Type in a name"></div>
                 <div class="add-date filter__search-item">
-                    <input id="add-date" type="text" placeholder="Add date">
+                    <input id="add-date" type="date" placeholder="Add date">
                     
                 </div>
                 <div><span class="glyphicon glyphicon-search"></span></div>
