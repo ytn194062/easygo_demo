@@ -606,7 +606,7 @@
     <div class="hotel-gallery">
         <div class="wide" ng-app="AngularApp" ng-controller="ProductController">
             <div class="slides">
-                <div id="item" class="hotel-item" dir-paginate="p in products|itemsPerPage: 5">
+                <div id="item" class="hotel-item" dir-paginate="p in products|itemsPerPage: totalProduct">
                     <a href="booking.html" target="_blank">
                         <div class="hotel-item-img">
                             <img src="{{p.image}} " alt="">
